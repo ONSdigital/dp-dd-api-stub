@@ -34,8 +34,6 @@ package models
 //  - should be attached to observations
 //  - OR possible attached to the dimension in the context of the other dimension values
 
-
-
 type Datasets struct {
 	Items []Dataset
 	Count int
@@ -49,7 +47,6 @@ type Dataset struct {
 	Title string
 	Metadata Metadata
 	Dimensions []Dimension
-	//Variables []Variable
 	Data Table
 }
 
@@ -68,18 +65,8 @@ type Dimension struct {
 	Value string // Male
 }
 
-//type Variable struct {  // ()
-//	ID string
-//	Name string // gross weekly pay
-//
-//	// attributes
-//}
-
-
 type Row struct {
 	Observation interface{} // 123
-
-	//VariableID string
 	Dimensions []Dimension // Sex=Male
 }
 
