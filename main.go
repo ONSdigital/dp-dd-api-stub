@@ -4,6 +4,12 @@ import (
 	"github.com/ONSdigital/go-ns/handlers/healthcheck"
 	"github.com/ONSdigital/go-ns/handlers/requestID"
 	"github.com/ONSdigital/go-ns/log"
+	"github.com/carlhembrough/dp-api-spike/handlers/data"
+	"github.com/carlhembrough/dp-api-spike/handlers/dataset"
+	"github.com/carlhembrough/dp-api-spike/handlers/datasets"
+	"github.com/carlhembrough/dp-api-spike/handlers/dimension"
+	"github.com/carlhembrough/dp-api-spike/handlers/dimensions"
+	"github.com/carlhembrough/dp-api-spike/handlers/search"
 	"github.com/gorilla/pat"
 	"github.com/justinas/alice"
 	"net/http"
@@ -23,8 +29,12 @@ func main() {
 
 	router.Get("/healthcheck", healthcheck.Handler)
 
-	router.Get("/datasets/{id}", func() {}) // provide detailed information for a given dataset
-	router.Get("/datasets", func() {})   // list high level dataset
+	router.Get("/datasets/search", search.Handler)
+	router.Get("/datasets/{datasetId}/dimensions/{dimensionId}", dimension.Handler) // data
+	router.Get("/datasets/{datasetId}/dimensions", dimensions.Handler)              // data
+	router.Get("/datasets/{datasetId}/data", data.Handler)                          // data
+	router.Get("/datasets/{datasetId}", dataset.Handler)                            // provide detailed information for a given dataset
+	router.Get("/datasets", datasets.Handler)                                       // list high level dataset
 
 	log.Debug("Starting server", log.Data{"bind_addr": bindAddr})
 

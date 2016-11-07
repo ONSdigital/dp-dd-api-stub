@@ -1,9 +1,7 @@
 package models
 
 // Dataset: Earnings by place of work
-
 // Dimensions: Sex | Employment status
-
 // Variables: gross weekly pay, weekly pay excluding overtime
 
 // Table
@@ -17,60 +15,68 @@ package models
 // 119          | weekly pay excluding overtime  | Female| Full Time
 // 70           | weekly pay excluding overtime  | Female| Part Time
 
-// Observation  | Variable          | Sex   | Employment status
-// 123          | Gross weekly pay  | All  | Full Time
-// 70           | Gross weekly pay  | All  | Part Time
+// Table -  Observation | DimensionID | DimensionOptionID | DimensionOptionLabel
+// Observation  | Geography ID  | Geography Label   | Sex ID | Sex Label    | Age ID    | Age Label | Residence Type ID | Residence Type Label
+// 105          | K04000001     | England and Wales | 1      | Females      | 1         | 50+       | 1                 | Lives in a communal establishment
 
-// segmentation - do attributes need to be attached to the observations or variables/ dimensions?
-   // need to be
+// human readable flag - include labels / replace them?
 
+// The csv output should not rely on fixed column locations. columns should be identified by their header value/ label.
+// by doing this we can remove all of the blank
 
-// should variables be a different concept to dimensions - no
+//Denormalisation
+// ---------------
+// The ID / details / label for the dimension can be held at the dataset level - it should not be repeated throughout the table.
 
+// Fixed dimension options - if the dimension only ever has one value for the dataset, we can define it as a fixed dimension.
+// This prevents it being repeated for each observation.
 
-// Darren feedback
-// variables do not exist as a concept - they are just dimensions
-// attributes / units can differ
-//  - should be attached to observations
-//  - OR possible attached to the dimension in the context of the other dimension values
+// Create ID's for dimensions and their options
+// when multiple datasets have the same dimensions they can be the same ID instead of having various string representations of the same thing.
+// e.g. year can mean different things in different datasets - financial year or calendar year
+
+// can we translate dimensions to ID's as part of the data baker step??
 
 type Datasets struct {
-	Items []Dataset
-	Count int
-	Total int
-	StartIndex int
-	ItemsPerPage int
+	Items        []*Dataset `json:"items,omitempty"`
+	Count        int        `json:"count"`
+	Total        int        `json:"total"`
+	StartIndex   int        `json:"startIndex"`
+	ItemsPerPage int        `json:"itemsPerPage"`
 }
 
 type Dataset struct {
-	ID string
-	Title string
-	Metadata Metadata
-	Dimensions []Dimension
-	Data Table
+	ID         string       `json:"id"`
+	Title      string       `json:"title"`
+	URL        string       `json:"url,omitempty"`
+	Metadata   *Metadata    `json:"metadata,omitempty"`
+	Dimensions []*Dimension `json:"dimensions,omitempty"`
+	Data       *Table       `json:"data,omitempty"`
 }
 
 type Metadata struct {
-	Description string
-	Taxonomies []string
+	Description string   `json:"description,omitempty"`
+	Taxonomies  []string `json:"taxonomies,omitempty"`
 }
 
 type Dimension struct {
-	Name string // Sex
+	ID   string `json:"id"`
+	Name string `json:"name"` // Sex
 
-	// possible values?
+	Options        []*DimensionOption `json:"options,omitempty"`
+	SelectedOption *DimensionOption   `json:"selectedOption,omitempty"`
+}
 
-	// possible units of measure?
-
-	Value string // Male
+type DimensionOption struct {
+	ID   string `json:"id"`
+	Name string `json:"name"` // Male
 }
 
 type Row struct {
-	Observation interface{} // 123
-	Dimensions []Dimension // Sex=Male
+	Observation interface{}        // 123
+	Dimensions  []*DimensionOption // Sex=Male
 }
 
 type Table struct {
-	Rows []Row
+	Rows []*Row
 }
-
