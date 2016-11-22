@@ -9,6 +9,7 @@ import (
 	"github.com/carlhembrough/dp-api-spike/handlers/datasets"
 	"github.com/carlhembrough/dp-api-spike/handlers/dimension"
 	"github.com/carlhembrough/dp-api-spike/handlers/dimensions"
+	"github.com/carlhembrough/dp-api-spike/handlers/download"
 	"github.com/carlhembrough/dp-api-spike/handlers/search"
 	"github.com/gorilla/pat"
 	"github.com/justinas/alice"
@@ -35,6 +36,7 @@ func main() {
 	router.Get("/datasets/{datasetId}/data", data.Handler)                          // data
 	router.Get("/datasets/{datasetId}", dataset.Handler)                            // provide detailed information for a given dataset
 	router.Get("/datasets", datasets.Handler)                                       // list high level dataset
+	router.Get("/download", download.Handler)                                       // list high level dataset
 
 	log.Debug("Starting server", log.Data{"bind_addr": bindAddr})
 
