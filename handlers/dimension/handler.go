@@ -8,32 +8,65 @@ import (
 
 func Handler(w http.ResponseWriter, req *http.Request) {
 
-	ageOptions := make([]*models.DimensionOption, 5)
-	ageOptions[0] = &models.DimensionOption{
-		ID:   "DO000265",
-		Name: "All categories: Age 16 and over",
+	optionsEnglandNorthEast := make([]*models.DimensionOption, 4)
+	optionsEnglandNorthEast[0] = &models.DimensionOption{
+		ID:   "2000017",
+		Name: "Hartlepool",
 	}
-	ageOptions[1] = &models.DimensionOption{
-		ID:   "DO000266",
-		Name: "Age 16 to 24",
+	optionsEnglandNorthEast[1] = &models.DimensionOption{
+		ID:   "2000018",
+		Name: "Middlesbrough",
 	}
-	ageOptions[2] = &models.DimensionOption{
-		ID:   "DO000267",
-		Name: "Age 25 to 34",
+	optionsEnglandNorthEast[2] = &models.DimensionOption{
+		ID:   "2000019",
+		Name: "Redcar and Cleveland",
 	}
-	ageOptions[3] = &models.DimensionOption{
-		ID:   "DO000268",
-		Name: "Age 35 to 49",
+	optionsEnglandNorthEast[3] = &models.DimensionOption{
+		ID:   "2000020",
+		Name: "Stockton-on-Tees",
 	}
-	ageOptions[4] = &models.DimensionOption{
-		ID:   "DO000269",
-		Name: "Age 50 and over",
+
+	optionsEngland := make([]*models.DimensionOption, 4)
+	optionsEngland[0] = &models.DimensionOption{
+		ID:      "E12000001",
+		Name:    "North East",
+		Options: optionsEnglandNorthEast,
+	}
+	optionsEngland[1] = &models.DimensionOption{
+		ID:   "E12000002",
+		Name: "North West",
+	}
+	optionsEngland[2] = &models.DimensionOption{
+		ID:   "E12000003",
+		Name: "Yorkshire and The Humber",
+	}
+	optionsEngland[3] = &models.DimensionOption{
+		ID:   "E12000004",
+		Name: "East Midlands",
+	}
+
+	options2 := make([]*models.DimensionOption, 2)
+	options2[0] = &models.DimensionOption{
+		ID:      "E92000001",
+		Name:    "England",
+		Options: optionsEngland,
+	}
+	options2[1] = &models.DimensionOption{
+		ID:   "W92000004",
+		Name: "Wales",
+	}
+
+	options := make([]*models.DimensionOption, 1)
+	options[0] = &models.DimensionOption{
+		ID:      "K04000001",
+		Name:    "England and Wales",
+		Options: options2,
 	}
 
 	dimension := &models.Dimension{
 		ID:      "D000123",
-		Name:    "Age",
-		Options: ageOptions,
+		Name:    "Geography",
+		Options: options,
 	}
 
 	jsonEncoder := json.NewEncoder(w)
