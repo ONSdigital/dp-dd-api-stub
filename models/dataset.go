@@ -70,6 +70,8 @@ type Dimension struct {
 type DimensionOption struct {
 	ID   string `json:"id"`
 	Name string `json:"name"` // Male
+
+	Options []*DimensionOption `json:"options,omitempty"`
 }
 
 type Row struct {
