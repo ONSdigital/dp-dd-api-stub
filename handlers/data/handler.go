@@ -2,8 +2,9 @@ package data
 
 import (
 	"encoding/json"
-	"github.com/carlhembrough/dp-api-spike/models"
 	"net/http"
+
+	"github.com/ONSdigital/dp-dd-api-stub/models"
 )
 
 func Handler(w http.ResponseWriter, req *http.Request) {
