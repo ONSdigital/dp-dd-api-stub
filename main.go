@@ -1,20 +1,21 @@
 package main
 
 import (
+	"net/http"
+	"os"
+
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/data"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/dataset"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/datasets"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/dimension"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/dimensions"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/download"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/search"
 	"github.com/ONSdigital/go-ns/handlers/healthcheck"
 	"github.com/ONSdigital/go-ns/handlers/requestID"
 	"github.com/ONSdigital/go-ns/log"
-	"github.com/carlhembrough/dp-api-spike/handlers/data"
-	"github.com/carlhembrough/dp-api-spike/handlers/dataset"
-	"github.com/carlhembrough/dp-api-spike/handlers/datasets"
-	"github.com/carlhembrough/dp-api-spike/handlers/dimension"
-	"github.com/carlhembrough/dp-api-spike/handlers/dimensions"
-	"github.com/carlhembrough/dp-api-spike/handlers/download"
-	"github.com/carlhembrough/dp-api-spike/handlers/search"
 	"github.com/gorilla/pat"
 	"github.com/justinas/alice"
-	"net/http"
-	"os"
 )
 
 func main() {
