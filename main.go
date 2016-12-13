@@ -27,9 +27,11 @@ func main() {
 	log.Namespace = "dp-content-resolver"
 
 	router := pat.New()
-	alice := alice.New(log.Handler, requestID.Handler(16)).Then(router)
+	alice := alice.New(log.Handler, requestID.Handler(16), corsHandler).Then(router)
 
 	router.Get("/healthcheck", healthcheck.Handler)
+
+	router.Options("/{x:.*}", func(w http.ResponseWriter, r *http.Request) {})
 
 	router.Get("/datasets/search", search.Handler)
 	router.Get("/datasets/{datasetId}/dimensions/{dimensionId}", dimension.Handler) // data
@@ -45,4 +47,11 @@ func main() {
 		log.Error(err, nil)
 		os.Exit(1)
 	}
+}
+
+func corsHandler(h http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		h.ServeHTTP(w, req)
+	})
 }
