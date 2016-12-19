@@ -9,6 +9,11 @@ import (
 	"github.com/ONSdigital/dp-dd-api-stub/handlers/datasets"
 	"github.com/ONSdigital/dp-dd-api-stub/handlers/dimension"
 	"github.com/ONSdigital/dp-dd-api-stub/handlers/dimensions"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/geohierarchies"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/geohierarchy"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/geoareas"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/geoarea"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/geoareatype"
 	"github.com/ONSdigital/dp-dd-api-stub/handlers/download"
 	"github.com/ONSdigital/dp-dd-api-stub/handlers/search"
 	"github.com/ONSdigital/go-ns/handlers/healthcheck"
@@ -24,13 +29,14 @@ func main() {
 		bindAddr = ":20099"
 	}
 
-	log.Namespace = "dp-content-resolver"
+	log.Namespace = "dp-dd-api-stub"
 
 	router := pat.New()
 	alice := alice.New(log.Handler, requestID.Handler(16)).Then(router)
 
 	router.Get("/healthcheck", healthcheck.Handler)
 
+	// Datasets
 	router.Get("/datasets/search", search.Handler)
 	router.Get("/datasets/{datasetId}/dimensions/{dimensionId}", dimension.Handler) // data
 	router.Get("/datasets/{datasetId}/dimensions", dimensions.Handler)              // data
@@ -38,6 +44,26 @@ func main() {
 	router.Get("/datasets/{datasetId}", dataset.Handler)                            // provide detailed information for a given dataset
 	router.Get("/datasets", datasets.Handler)                                       // list high level dataset
 	router.Get("/download", download.Handler)                                       // list high level dataset
+
+	// Geographic Hierarchies and Areas
+	// http://localhost:20099/geoareas/?geoareatype=COUNTRY				// returns list of all geographical areas within an entity (e.g. Metropolitan Districts)
+	router.Methods("GET").PathPrefix("/geoareas").Queries("geoareatype","{type}").HandlerFunc(geoareatype.Handler)
+
+	// http://localhost:20099/geoareas/?geohierarchy=2013ADMIN			// provide detailed information for a given geographic hierarchy
+											// equivalent to http://localhost:20099/geohierarchies/2013ADMIN
+	router.Methods("GET").PathPrefix("/geoareas").Queries("geohierarchy","{hierarchy}").HandlerFunc(geohierarchy.Handler)
+
+	// http://localhost:20099/geoareas/1000001
+	router.Get("/geoareas/{geoareaId}", geoarea.Handler)                            // provide detailed information for a given geographic area
+
+	// http://localhost:20099/geoareas
+	router.Get("/geoareas", geoareas.Handler)					// list all geographic areas across all hierarchies
+
+	// http://localhost:20099/geohierarchies/2013ADMIN
+	router.Get("/geohierarchies/{geohierarchyId}", geohierarchy.Handler)            // provide detailed information for a given geographic hierarchy
+
+	// http://localhost:20099/geohierarchies
+	router.Get("/geohierarchies", geohierarchies.Handler)                           // list all geographic hierarchies
 
 	log.Debug("Starting server", log.Data{"bind_addr": bindAddr})
 
