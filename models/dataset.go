@@ -54,6 +54,40 @@ type Dataset struct {
 	Data       *Table       `json:"data,omitempty"`
 }
 
+type GeoArea struct {
+	ID         string          `json:"id"`
+	Name       string          `json:"name"`
+	ExtCode    string          `json:"extCode"`
+	Metadata   *Metadata       `json:"metadata,omitempty"`
+	RelGeoArea string          `json:"relid,omitempty"`
+	AreaType   string          `json:"areaType"`
+	AreaLevel  string          `json:"areaLevel"`
+	Populations []*Population  `json:"populations,omitempty"`
+}
+
+type GeoHierarchy struct {
+	Name        string      `json:"name"`
+	GeoAreas []*GeoArea 	`json:"geoAreas,omitempty"`
+}
+
+type Population struct {
+	GeoAreaID    string     `json:"geoAreaID"`
+	ExtCode      string     `json:"extCode"`
+	TimePeriodID string     `json:"timePeriodID"`
+}
+
+type TimePeriod struct {
+	ID           string     `json:"id"`
+	Name         string     `json:"name"`
+	StartDate    string     `json:"startDate"`
+	EndDate      string     `json:"endDate"`
+	TimeTypeID   string     `json:"timeTypeID`
+}
+
+type TimeType struct {
+	ID string `json:"id"`
+}
+
 type Metadata struct {
 	Description string   `json:"description,omitempty"`
 	Taxonomies  []string `json:"taxonomies,omitempty"`
