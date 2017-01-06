@@ -11,7 +11,7 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 
 	var stubData models.Datasets = models.Datasets{}
 
-	stubData.Items = make([]*models.Dataset, 2)
+	stubData.Items = make([]*models.Dataset, 3)
 
 	stubData.Items[0] = &models.Dataset{
 		ID:    "AF001EW",
@@ -31,10 +31,19 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 		},
 	}
 
-	stubData.Count = 2
+	stubData.Items[2] = &models.Dataset{
+		ID:    "CPI15",
+		Title: "CPI15 Consumer Prices Index (COICOP).",
+		URL:   "http://localhost:20099/datasets/CPI15",
+		Metadata: &models.Metadata{
+			Description: "Consumer Price Index statistics by Time and Special Aggregate (type of economic activity). This dataset shows the movement of prices over the last five years within the UK economy, broken down by month and various classifications of economic activity. The economic classifications are derived from the COICOP (Classification Of Individual Consumption by Purpose) list.",
+		},
+	}
+
+	stubData.Count = len(stubData.Items)
 	stubData.StartIndex = 0
 	stubData.ItemsPerPage = 10
-	stubData.Total = 2
+	stubData.Total = len(stubData.Items)
 
 	jsonEncoder := json.NewEncoder(w)
 	jsonEncoder.Encode(stubData)
