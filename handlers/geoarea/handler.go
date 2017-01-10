@@ -3,7 +3,6 @@ package geoarea
 // Get Entities from Hierarchy - request by Entity,
 // returns list of all geographical areas within an entity (e.g. Metropolitan Districts)
 
-
 import (
 	"encoding/json"
 	"net/http"
@@ -14,14 +13,14 @@ import (
 func Handler(w http.ResponseWriter, req *http.Request) {
 
 	time_type := &models.TimeType{
-		ID:    "1",
+		ID: "1",
 	}
 
 	time_period := &models.TimePeriod{
-		ID:        "1",
-		StartDate: "2014-01-01",
-		EndDate:   "2014-12-31",
-		Name:      "2014",
+		ID:         "1",
+		StartDate:  "2014-01-01",
+		EndDate:    "2014-12-31",
+		Name:       "2014",
 		TimeTypeID: time_type.ID,
 	}
 
@@ -32,7 +31,6 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 		GeoAreaID:    "2000001",
 		TimePeriodID: time_period.ID,
 	}
-
 
 	geoAreas2011 := make([]*models.GeoArea, 1)
 

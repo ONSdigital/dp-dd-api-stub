@@ -15,14 +15,14 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 	log.Debug("Got query string:", log.Data{"geoareatype": req.URL.Query().Get("geoareatype")})
 
 	time_type := &models.TimeType{
-		ID:    "1",
+		ID: "1",
 	}
 
 	time_period := &models.TimePeriod{
-		ID:        "1",
-		StartDate: "2014-01-01",
-		EndDate:   "2014-12-31",
-		Name:      "2014",
+		ID:         "1",
+		StartDate:  "2014-01-01",
+		EndDate:    "2014-12-31",
+		Name:       "2014",
 		TimeTypeID: time_type.ID,
 	}
 
@@ -37,20 +37,20 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 	geoAreas2011 := make([]*models.GeoArea, 2)
 
 	geoAreas2011[0] = &models.GeoArea{
-		ID:        "1000002",
-		ExtCode:   "E92000001",
-		Name:      "England",
-		AreaType:  "COUNTRY",
-		AreaLevel: "COUNTRY",
+		ID:          "1000002",
+		ExtCode:     "E92000001",
+		Name:        "England",
+		AreaType:    "COUNTRY",
+		AreaLevel:   "COUNTRY",
 		Populations: populations,
 	}
 
 	geoAreas2011[1] = &models.GeoArea{
-		ID:        "1000003",
-		ExtCode:   "W92000004",
-		Name:      "Wales",
-		AreaType:  "COUNTRY",
-		AreaLevel: "COUNTRY",
+		ID:          "1000003",
+		ExtCode:     "W92000004",
+		Name:        "Wales",
+		AreaType:    "COUNTRY",
+		AreaLevel:   "COUNTRY",
 		Populations: populations,
 	}
 
