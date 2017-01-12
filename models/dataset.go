@@ -46,12 +46,13 @@ type Datasets struct {
 }
 
 type Dataset struct {
-	ID         string       `json:"id"`
-	Title      string       `json:"title"`
-	URL        string       `json:"url,omitempty"`
-	Metadata   *Metadata    `json:"metadata,omitempty"`
-	Dimensions []*Dimension `json:"dimensions,omitempty"`
-	Data       *Table       `json:"data,omitempty"`
+	ID            string       `json:"id"`
+	S3URL         string       `json:"s3URL"`
+	URL           string       `json:"url,omitempty"`
+	Metadata      *Metadata    `json:"metadata,omitempty"`
+	Dimensions    []*Dimension `json:"dimensions,omitempty"`
+	Data          *Table       `json:"data,omitempty"`
+	DimensionsUrl string       `json:"dimensionsUrl,omitempty"`
 }
 
 type GeoArea struct {

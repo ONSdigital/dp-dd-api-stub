@@ -5,7 +5,10 @@ import (
 	"net/http"
 
 	"github.com/ONSdigital/dp-dd-api-stub/models"
+	"fmt"
 )
+
+const S3URL_FMT = "s3://test-bucket/dir1/%s"
 
 func Handler(w http.ResponseWriter, req *http.Request) {
 
@@ -15,7 +18,7 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 
 	stubData.Items[0] = &models.Dataset{
 		ID:    "AF001EW",
-		Title: "AF001EW  Members of the Armed Forces by residence type by sex by age",
+		S3URL: fmt.Sprintf(S3URL_FMT, "AF001EW"),
 		URL:   "http://localhost:20099/datasets/AF001EW",
 		Metadata: &models.Metadata{
 			Description: "This dataset provides 2011 Census estimates that classify usual residents aged 16 and over who are members of the armed forces by residence type (household or communal resident), by sex and by age. The estimates are as at census day, 27 March 2011.",
