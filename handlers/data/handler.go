@@ -5,7 +5,10 @@ import (
 	"net/http"
 
 	"github.com/ONSdigital/dp-dd-api-stub/models"
+	"fmt"
 )
+
+const S3URL_FMT = "s3://test-bucket/dir1/%s"
 
 func Handler(w http.ResponseWriter, req *http.Request) {
 
@@ -83,7 +86,7 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 
 		stubData = &models.Dataset{
 			ID:         "AF001EW",
-			Title:      "AF001EW  Members of the Armed Forces by residence type by sex by age",
+			S3URL:      fmt.Sprintf(S3URL_FMT, "AF001EW"),
 			Dimensions: dimensions,
 			Data:       table,
 		}
@@ -207,7 +210,7 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 
 		stubData = &models.Dataset{
 			ID:         "AF001EW",
-			Title:      "AF001EW  Members of the Armed Forces by residence type by sex by age",
+			S3URL:      fmt.Sprintf(S3URL_FMT, "AF001EW"),
 			Dimensions: dimensions,
 			Data:       table,
 		}
