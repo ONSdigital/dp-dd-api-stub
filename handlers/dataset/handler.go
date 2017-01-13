@@ -32,37 +32,9 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 		Metadata: &models.Metadata{
 			Description: "This dataset provides 2011 Census estimates that classify usual residents aged 16 and over who are members of the armed forces by residence type (household or communal resident), by sex and by age. The estimates are as at census day, 27 March 2011.",
 		},
-		Dimensions: []*models.Dimension{{
-			ID:   "D000125",
-			Name: "Special aggregate",
-			Options: []*models.DimensionOption{{
-				ID:   "FOOD0001",
-				Name: "(01) Food and non-alcoholic beverages",
-				Options: []*models.DimensionOption{
-					{ID: "OPT02", Name: "Food"},
-					{ID: "OPT03", Name: "Bread and cereals"},
-					{ID: "OPT04", Name: "Meat"},
-					{ID: "OPT05", Name: "Fish"},
-					{ID: "OPT06", Name: "Milk, cheese and eggs"},
-					{ID: "OPT07", Name: "Oils and fats"},
-					{ID: "OPT08", Name: "Fruit"},
-				},
-			}, {
-				ID:   "HEALTH0002",
-				Name: "(02) Health",
-				Options: []*models.DimensionOption{
-					{ID: "OPT02", Name: "Medical products, appliances and equipment"},
-					{ID: "OPT03", Name: "Pharmaceutical products"},
-					{ID: "OPT04", Name: "Other medical and therapeutic equipment"},
-					{ID: "OPT05", Name: "Out-patient services"},
-					{ID: "OPT06", Name: "Medical services and paramedical services"},
-					{ID: "OPT07", Name: "Dental services"},
-					{ID: "OPT08", Name: "In-patient service"},
-					{ID: "OPT09", Name: "Medical and paramedic services"},
-				},
-			},
-			},
-		},
+		Dimensions: []*models.Dimension{
+			{ID:   "SP00001", Name: "Special aggregate"},
+			{ID:   "T000111", Name: "Time"},
 		},
 	}
 
