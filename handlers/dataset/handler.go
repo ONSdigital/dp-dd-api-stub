@@ -25,12 +25,11 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 			},
 			ReleaseDate: "23 May 2014",
 			NextRelease: "To be announced",
-			Publications: []*models.Publication{
-				{DatasetID: "AF002", Title: "AF002 Household Reference Persons (HRPs) who are members of the Armed Forces and associated persons in households with members of the Armed Forces by sex by age, local authorities in England and Wales"},
-				{DatasetID: "AF003", Title: "AF003 Economic activity of associated people in households with members of the Armed Forces by sex, local authorities in England and Wales"},
-				{DatasetID: "AF004", Title: "AF004 Members of the Armed Forces by workplace address by sex by age, local authorities in England and Wales"},
+			Publications: []string{
+				"http://localhost:20099/datasets/AF002",
+				"http://localhost:20099/datasets/AF003",
+				"http://localhost:20099/datasets/AF004",
 			},
-			Comments:           "N/A",
 			TermsAndConditions: "N/A",
 		},
 		Dimensions: []*models.Dimension{
@@ -58,7 +57,6 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 			Methodology: []*models.Methodology{
 				{Title: "Consumer Price Inflation (includes all 4 indices—CPI, CPIH, RPI and RPIJ)", URL: "https://www.ons.gov.uk/economy/inflationandpriceindices/qmis/consumerpriceinflationqmi"},
 			},
-			Comments:           "N/A",
 			TermsAndConditions: "",
 		},
 		Dimensions: []*models.Dimension{

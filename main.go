@@ -47,7 +47,7 @@ func main() {
 	router.Get("/datasets/{datasetId}", dataset.Handler)                            // provide detailed information for a given dataset
 	router.Get("/datasets", datasets.Handler)                                       // list high level dataset
 	router.Get("/download", download.Handler)                                       // list high level dataset
-	router.Get("/dataresource/{resourceId}", dataresource.Handler)
+	router.Get("/dataresources/{resourceId}", dataresource.Handler)
 
 	// Geographic Hierarchies and Areas
 	// http://localhost:20099/geoareas/?geoareatype=COUNTRY				// returns list of all geographical areas within an entity (e.g. Metropolitan Districts)

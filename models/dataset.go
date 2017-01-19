@@ -103,16 +103,9 @@ type Metadata struct {
 	ReleaseDate        string         `json:"releaseDate"`
 	NextRelease        string         `json:"nextReleaseDate"`
 	NationalStatistics bool           `json:"nationalStatistics"` // whether these are official National Statistics
-	Publications       []*Publication `json:"associatedPublications"`
+	Publications       []string       `json:"associatedPublications"`
 	Methodology        []*Methodology `json:"methodology"`
-	Comments           string         `json:"datasetInternalMetadata,omitempty"`
 	TermsAndConditions string         `json:"termsAndConditions,omitempty"`
-}
-
-type Publication struct {
-	Title     string `json:"title"`
-	URL       string `json:"url,omitempty"`
-	DatasetID string `json:"datasetId,omitempty"`
 }
 
 type Contact struct {
