@@ -45,6 +45,13 @@ type Datasets struct {
 	ItemsPerPage int        `json:"itemsPerPage"`
 }
 
+type DataResource struct {
+	ID       string    `json:"id"`
+	Title    string    `json:"title"`
+	Metadata *Metadata `json:"metadata"`
+	Datasets []string  `json:"datasets"`
+}
+
 type Dataset struct {
 	ID               string       `json:"id"`
 	CustomerFacingID string       `json:"customerFacingId"`
@@ -98,8 +105,8 @@ type Metadata struct {
 	NationalStatistics bool           `json:"nationalStatistics"` // whether these are official National Statistics
 	Publications       []*Publication `json:"associatedPublications"`
 	Methodology        []*Methodology `json:"methodology"`
-	Comments           string         `json:"datasetInternalMetadata"`
-	TermsAndConditions string         `json:"termsAndConditions"`
+	Comments           string         `json:"datasetInternalMetadata,omitempty"`
+	TermsAndConditions string         `json:"termsAndConditions,omitempty"`
 }
 
 type Publication struct {
