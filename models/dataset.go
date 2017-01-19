@@ -45,13 +45,21 @@ type Datasets struct {
 	ItemsPerPage int        `json:"itemsPerPage"`
 }
 
+type DataResource struct {
+	ID       string    `json:"id"`
+	Title    string    `json:"title"`
+	Metadata *Metadata `json:"metadata"`
+	Datasets []string  `json:"datasets"`
+}
+
 type Dataset struct {
-	ID         string       `json:"id"`
-	Title      string       `json:"title"`
-	URL        string       `json:"url,omitempty"`
-	Metadata   *Metadata    `json:"metadata,omitempty"`
-	Dimensions []*Dimension `json:"dimensions,omitempty"`
-	Data       *Table       `json:"data,omitempty"`
+	ID               string       `json:"id"`
+	CustomerFacingID string       `json:"customerFacingId"`
+	Title            string       `json:"title"`
+	URL              string       `json:"url,omitempty"`
+	Metadata         *Metadata    `json:"metadata,omitempty"`
+	Dimensions       []*Dimension `json:"dimensions,omitempty"`
+	Data             *Table       `json:"data,omitempty"`
 }
 
 type GeoArea struct {
@@ -89,8 +97,26 @@ type TimeType struct {
 }
 
 type Metadata struct {
-	Description string   `json:"description,omitempty"`
-	Taxonomies  []string `json:"taxonomies,omitempty"`
+	Description        string         `json:"description,omitempty"`
+	Taxonomies         []string       `json:"taxonomies,omitempty"`
+	Contact            *Contact       `json:"contact"`
+	ReleaseDate        string         `json:"releaseDate"`
+	NextRelease        string         `json:"nextReleaseDate"`
+	NationalStatistics bool           `json:"nationalStatistics"` // whether these are official National Statistics
+	Publications       []string       `json:"associatedPublications"`
+	Methodology        []*Methodology `json:"methodology"`
+	TermsAndConditions string         `json:"termsAndConditions,omitempty"`
+}
+
+type Contact struct {
+	Name  string `json:"name"`
+	Email string `json:"email,omitempty"`
+	Phone string `json:"phone,omitempty"`
+}
+
+type Methodology struct {
+	Title string `json:"title"`
+	URL   string `json:"url"`
 }
 
 type Dimension struct {

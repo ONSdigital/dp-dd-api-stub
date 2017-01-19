@@ -1,4 +1,4 @@
-package datasets
+package dataresource
 
 import (
 	"encoding/json"
@@ -7,14 +7,11 @@ import (
 )
 
 func Handler(w http.ResponseWriter, req *http.Request) {
+	var stubData map[string]*models.DataResource = make(map[string]*models.DataResource)
 
-	var stubData models.Datasets = models.Datasets{}
-
-	stubData.Items = []*models.Dataset{{
-		ID:               "AF001EW",
-		CustomerFacingID: "AF001EW",
-		Title:            "AF001EW  Members of the Armed Forces by residence type by sex by age",
-		URL:              "http://localhost:20099/datasets/AF001EW",
+	stubData["AF001EW"] = &models.DataResource{
+		ID:    "AF001EW",
+		Title: "AF001EW  Members of the Armed Forces by residence type by sex by age",
 		Metadata: &models.Metadata{
 			Description:        "This dataset provides 2011 Census estimates that classify usual residents aged 16 and over who are members of the armed forces by residence type (household or communal resident), by sex and by age. The estimates are as at census day, 27 March 2011.",
 			NationalStatistics: true,
@@ -30,13 +27,13 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 				"http://localhost:20099/datasets/AF003",
 				"http://localhost:20099/datasets/AF004",
 			},
-			TermsAndConditions: "N/A",
 		},
-	}, {
-		ID:               "CPI15",
-		CustomerFacingID: "CPI15",
-		Title:            "CPI15 Consumer Prices Index (COICOP).",
-		URL:              "http://localhost:20099/datasets/CPI15",
+		Datasets: []string{"http://localhost:20099/datasets/AF001EW"},
+	}
+
+	stubData["CPI15"] = &models.DataResource{
+		ID:    "CPI15",
+		Title: "CPI15 Consumer Prices Index (COICOP).",
 		Metadata: &models.Metadata{
 			Description:        "Consumer Price Index statistics by Time and Special Aggregate (type of economic activity). This dataset shows the movement of prices over the last five years within the UK economy, broken down by month and various classifications of economic activity. The economic classifications are derived from the COICOP (Classification Of Individual Consumption by Purpose) list.",
 			NationalStatistics: true,
@@ -50,17 +47,18 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 			Methodology: []*models.Methodology{
 				{Title: "Consumer Price Inflation (includes all 4 indices—CPI, CPIH, RPI and RPIJ)", URL: "https://www.ons.gov.uk/economy/inflationandpriceindices/qmis/consumerpriceinflationqmi"},
 			},
-			TermsAndConditions: "",
 		},
-	}}
+		Datasets: []string{"http://localhost:20099/datasets/CPI15"},
+	}
 
-	stubData.Count = len(stubData.Items)
-	stubData.StartIndex = 0
-	stubData.ItemsPerPage = 10
-	stubData.Total = len(stubData.Items)
+	datasetID := req.URL.Query().Get(":resourceId")
+	if _, ok := stubData[datasetID]; !ok {
+		w.WriteHeader(404)
+		return
+	}
 
 	jsonEncoder := json.NewEncoder(w)
-	jsonEncoder.Encode(stubData)
+	jsonEncoder.Encode(stubData[datasetID])
 
 	w.WriteHeader(200)
 }
