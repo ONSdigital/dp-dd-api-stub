@@ -65,6 +65,21 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 		},
 	}
 
+	stubData["NO-META"] = &models.Dataset{
+		ID:               "NO-META",
+		CustomerFacingID: "NO-META",
+		Title:            "Fake dataset with missing metadata field",
+		URL:              "http://localhost:20099/datasets/NO-META",
+	}
+
+	stubData["EMPTY-META"] = &models.Dataset{
+		ID:               "EMPTY-META",
+		CustomerFacingID: "EMPTY-META",
+		Title:            "Fake dataset with empty metadata",
+		URL:              "http://localhost:20099/datasets/EMPTY-META",
+		Metadata:         &models.Metadata{},
+	}
+
 	datasetID := req.URL.Query().Get(":datasetId")
 	if _, ok := stubData[datasetID]; !ok {
 		w.WriteHeader(404)
