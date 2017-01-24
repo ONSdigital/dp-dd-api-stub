@@ -52,6 +52,17 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 			},
 			TermsAndConditions: "",
 		},
+	}, {
+		ID:               "NO-META",
+		CustomerFacingID: "NO-META",
+		Title:            "Fake dataset with missing metadata field",
+		URL:              "http://localhost:20099/datasets/NO-META",
+	}, {
+		ID:               "EMPTY-META",
+		CustomerFacingID: "EMPTY-META",
+		Title:            "Fake dataset with empty metadata",
+		URL:              "http://localhost:20099/datasets/EMPTY-META",
+		Metadata:         &models.Metadata{},
 	}}
 
 	stubData.Count = len(stubData.Items)
