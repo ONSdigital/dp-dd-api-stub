@@ -39,6 +39,7 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 	}, {
 		ID:   "D000126",
 		Name: "2011 Statistical Geography Hierarchy",
+		Type: "geography",
 		Options: []*models.DimensionOption{
 			{ID: "K04000001", Name: "England and Wales"},
 			{ID: "E92000001", Name: "England"},
@@ -49,6 +50,7 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 	stubDimensions["CPI15"] = []*models.Dimension{{
 		ID:   "SP00001",
 		Name: "Special aggregate",
+		Type: "classification",
 		Options: []*models.DimensionOption{{
 			ID:   "FOOD0001",
 			Name: "(01) Food and non-alcoholic beverages",
@@ -78,6 +80,7 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 	}, {
 		ID:   "T000111",
 		Name: "Time",
+		Type: "time",
 		Options: []*models.DimensionOption{
 			{ID: "OPT02", Name: "February 2013"},
 			{ID: "OPT02", Name: "March 2013"},
