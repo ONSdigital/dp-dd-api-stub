@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"github.com/ONSdigital/dp-dd-api-stub/models"
 	"net/http"
+	"strconv"
 )
 
 func Handler(w http.ResponseWriter, req *http.Request) {
@@ -69,6 +70,12 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 	stubData.StartIndex = 0
 	stubData.ItemsPerPage = 10
 	stubData.Total = len(stubData.Items)
+	stubData.TotalPages = (len(stubData.Items) + 9) / stubData.ItemsPerPage
+	stubData.Page = 1
+
+	baseUrl := "http://" + req.Host + req.URL.EscapedPath()
+	stubData.First = baseUrl + "?page=1"
+	stubData.Last = baseUrl + "?page=" + strconv.Itoa(stubData.TotalPages)
 
 	jsonEncoder := json.NewEncoder(w)
 	jsonEncoder.Encode(stubData)
