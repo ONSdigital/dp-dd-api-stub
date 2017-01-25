@@ -120,9 +120,9 @@ type Methodology struct {
 }
 
 type Dimension struct {
-	ID   string `json:"id"`
-	Name string `json:"name"` // Sex
-
+	ID             string             `json:"id"`
+	Name           string             `json:"name"` // Sex
+	Type           string             `json:"type"` // Dimension type
 	Options        []*DimensionOption `json:"options,omitempty"`
 	SelectedOption *DimensionOption   `json:"selectedOption,omitempty"`
 }
