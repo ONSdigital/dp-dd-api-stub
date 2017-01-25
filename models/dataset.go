@@ -43,6 +43,12 @@ type Datasets struct {
 	Total        int        `json:"total"`
 	StartIndex   int        `json:"startIndex"`
 	ItemsPerPage int        `json:"itemsPerPage"`
+	First        string     `json:"first"`
+	Next         string     `json:"next,omitempty"`
+	Prev         string     `json:"prev,omitempty"`
+	Last         string     `json:"last"`
+	Page         int        `json:"page"`
+	TotalPages   int        `json:"totalPages"`
 }
 
 type DataResource struct {
@@ -89,7 +95,7 @@ type TimePeriod struct {
 	Name       string `json:"name"`
 	StartDate  string `json:"startDate"`
 	EndDate    string `json:"endDate"`
-	TimeTypeID string `json:"timeTypeID`
+	TimeTypeID string `json:"timeTypeID"`
 }
 
 type TimeType struct {
