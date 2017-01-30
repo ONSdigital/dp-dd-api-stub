@@ -43,10 +43,11 @@ func main() {
 	router.Options("/{x:.*}", func(w http.ResponseWriter, r *http.Request) {})
 
 	router.Get("/datasets/search", search.Handler)
+
 	// datasets/{datasetId}/dimensions/{dimensionId}			<- dimension with list of options
 	router.Get("/datasets/{datasetId}/dimensions/{dimensionId}", dimension.Handler) // data
-
 	router.Get("/datasets/{datasetId}/dimensions", dimensions.Handler) // data
+
 	router.Get("/datasets/{datasetId}/data", data.Handler)             // data
 	router.Get("/datasets/{datasetId}", dataset.Handler)               // provide detailed information for a given dataset
 	router.Get("/datasets", datasets.Handler)                          // list high level dataset

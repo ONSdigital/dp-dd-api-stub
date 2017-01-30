@@ -8,25 +8,14 @@ import (
 	"github.com/ONSdigital/dp-dd-api-stub/stub"
 	"fmt"
 	"os"
-	"errors"
 )
-
-func findDatasetIndexByID(dimensions []models.Dimension, dimensionID string)  (dimension *models.Dimension, err error) {
-	fmt.Println(dimensions)
-	for _, dimension := range dimensions {
-		fmt.Println(dimension.ID + "==" + dimensionID)
-		if dimension.ID == dimensionID {
-			return &dimension, nil
-		}
-	}
-	return &models.Dimension{}, errors.New("Dimension id " + dimensionID + " not found.")
-}
 
 func Handler(w http.ResponseWriter, req *http.Request) {
 	datasetID := req.URL.Query().Get(":datasetId")
 	dimensionID := req.URL.Query().Get(":dimensionId")
-	raw, err := stub.Asset("data/datasets/" + datasetID + "/dimensions.json")
 
+
+	raw, err := stub.Asset("data/datasets/" + datasetID + "/dimensions.json")
 	if err != nil {
 		fmt.Println(err.Error())
 		os.Exit(1)
@@ -38,17 +27,17 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 	dimension, err:= findDatasetIndexByID(dimensions, dimensionID)
 	if err != nil {
 		fmt.Println(err)
-		response, err := json.Marshal(models.Dimension{})
+		_, err := json.Marshal(models.Dimension{})
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
 		w.WriteHeader(400)
-		w.Write(response)
-		return
+		//w.Write(response)
+	} else {
+		jsonEncoder := json.NewEncoder(w)
+		jsonEncoder.Encode(dimension)
+		w.WriteHeader(200)
 	}
 
-	jsonEncoder := json.NewEncoder(w)
-	jsonEncoder.Encode(dimension)
-	w.WriteHeader(200)
 }
