@@ -1,6 +1,6 @@
 [
   {
-    "id": "Time",
+    "id": "TIME_001",
     "name": "Time",
     "type": "time"
   },
@@ -10,7 +10,7 @@
     "type": "classification"
   },
   {
-    "id": "Geography",
+    "id": "GOEO_001",
     "name": "Geography",
     "type": "geography"
   }

@@ -26,14 +26,14 @@
       "id": "SP00001",
       "name": "Special aggregate",
       "type": "classification",
-      "url": "http://localhost:20099/datasets/CPI15/SP00001",
+      "url": "http://localhost:20099/datasets/CPI15/dimensions/SP00001",
       "hierarchical": true
     },
     {
       "id": "T000111",
       "name": "Time",
       "type": "time",
-      "url": "http://localhost:20099/datasets/CPI15/T000111",
+      "url": "http://localhost:20099/datasets/CPI15/dimensions/T000111",
       "hierarchical": true
     }
   ]
