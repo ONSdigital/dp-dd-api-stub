@@ -8,5 +8,10 @@
     "id": "CI_000641",
     "name": "Special Aggregate",
     "type": "classification"
+  },
+  {
+    "id": "Geography",
+    "name": "Geography",
+    "type": "geography"
   }
 ]
