@@ -52,7 +52,7 @@ func main() {
 	router.Get("/datasets", datasets.Handler)                          // list high level dataset
 
 	router.Get("/hierarchies/{hierarchyId}", hierarchy.Handler)
-	router.Get("/hierarchies/", hierarchies.Handler)
+	router.Get("/hierarchies", hierarchies.Handler)
 
 	router.Get("/download", download.Handler) // list high level dataset
 	router.Get("/dataresources/{resourceId}", dataresource.Handler)
