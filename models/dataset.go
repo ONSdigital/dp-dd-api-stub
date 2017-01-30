@@ -140,6 +140,26 @@ type DimensionOption struct {
 	Options []*DimensionOption `json:"options,omitempty"`
 }
 
+type Hierarchy struct {
+	ID      string            `json:"id"`
+	Name    string            `json:"name"` // Sex
+	Type    string            `json:"type"` // Dimension type
+	Options []*HierarchyEntry `json:"options,omitempty"`
+}
+
+type HierarchyEntry struct {
+	ID        string              `json:"id"`
+	Name      string              `json:"name"`
+	LevelType *HierarchyLevelType `json:"levelType,omitempty"`
+	Options   []*HierarchyEntry   `json:"options,omitempty"`
+}
+
+type HierarchyLevelType struct {
+	Code  string `json:"code"`
+	Name  string `json:"name"`
+	Level int    `json:"level"`
+}
+
 type Row struct {
 	Observation interface{}        // 123
 	Dimensions  []*DimensionOption // Sex=Male
