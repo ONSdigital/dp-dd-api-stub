@@ -127,8 +127,8 @@ type Methodology struct {
 
 type Dimension struct {
 	ID             string             `json:"id"`
-	Name           string             `json:"name"` // Sex
-	Type           string             `json:"type"` // Dimension type
+	Name           string             `json:"name"` // eg.: Sex
+	Type           string             `json:"type"` // standard, classification, time, geography
 	URL            string             `json:"url"`
 	Hierarchical   bool               `json:"hierarchical"`
 	Options        []*DimensionOption `json:"options,omitempty"`
@@ -136,16 +136,15 @@ type Dimension struct {
 }
 
 type DimensionOption struct {
-	ID   string `json:"id"`
-	Name string `json:"name"` // Male
-
+	ID      string             `json:"id"`
+	Name    string             `json:"name"` // Male
 	Options []*DimensionOption `json:"options,omitempty"`
 }
 
 type Hierarchy struct {
 	ID      string            `json:"id"`
-	Name    string            `json:"name"` // Sex
-	Type    string            `json:"type"` // Dimension type
+	Name    string            `json:"name"`
+	Type    string            `json:"type"`
 	Options []*HierarchyEntry `json:"options,omitempty"`
 }
 
