@@ -1,0 +1,364 @@
+{
+  "id": "Time",
+  "name": "Time",
+  "type": "time",
+  "options": [
+    {
+      "id": "2015",
+      "name": "2015",
+      "levelType": {
+        "code": "year",
+        "name": "year",
+        "level": 0
+      },
+      "options": [
+        {
+          "id": "2015.01",
+          "name": "January",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2015.02",
+          "name": "February",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2015.03",
+          "name": "March",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2015.04",
+          "name": "April",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2015.05",
+          "name": "May",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2015.06",
+          "name": "June",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2015.07",
+          "name": "July",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2015.08",
+          "name": "August",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2015.09",
+          "name": "September",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2015.10",
+          "name": "October",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2015.11",
+          "name": "November",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2015.12",
+          "name": "December",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "2016",
+      "name": "2016",
+      "levelType": {
+        "code": "year",
+        "name": "year",
+        "level": 0
+      },
+      "options": [
+        {
+          "id": "2016.01",
+          "name": "January",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2016.02",
+          "name": "February",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2016.03",
+          "name": "March",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2016.04",
+          "name": "April",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2016.05",
+          "name": "May",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2016.06",
+          "name": "June",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2016.07",
+          "name": "July",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2016.08",
+          "name": "August",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2016.09",
+          "name": "September",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2016.10",
+          "name": "October",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2016.11",
+          "name": "November",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2016.12",
+          "name": "December",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "2017",
+      "name": "2017",
+      "levelType": {
+        "code": "year",
+        "name": "year",
+        "level": 0
+      },
+      "options": [
+        {
+          "id": "2017.01",
+          "name": "January",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2017.02",
+          "name": "February",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2017.03",
+          "name": "March",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2017.04",
+          "name": "April",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2017.05",
+          "name": "May",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2017.06",
+          "name": "June",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2017.07",
+          "name": "July",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2017.08",
+          "name": "August",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2017.09",
+          "name": "September",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2017.10",
+          "name": "October",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2017.11",
+          "name": "November",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        },
+        {
+          "id": "2017.12",
+          "name": "December",
+          "levelType": {
+            "code": "month",
+            "name": "month",
+            "level": 1
+          }
+        }
+      ]
+    }
+  ]
+}
