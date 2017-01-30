@@ -32,7 +32,7 @@
     {
       "id": "T000111",
       "name": "Time",
-      "type": "Time",
+      "type": "time",
       "url": "http://localhost:20099/datasets/CPI15/T000111",
       "hierarchical": true
     }
