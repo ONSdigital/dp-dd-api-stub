@@ -129,6 +129,7 @@ type Dimension struct {
 	ID             string             `json:"id"`
 	Name           string             `json:"name"` // Sex
 	Type           string             `json:"type"` // Dimension type
+	URL            string             `json:"url"`
 	Hierarchical   bool               `json:"hierarchical"`
 	Options        []*DimensionOption `json:"options,omitempty"`
 	SelectedOption *DimensionOption   `json:"selectedOption,omitempty"`
