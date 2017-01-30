@@ -33,10 +33,10 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 			TermsAndConditions: "N/A",
 		},
 		Dimensions: []*models.Dimension{
-			{ID: "D000125", Name: "Sex"},
-			{ID: "D000124", Name: "Residence Type"},
-			{ID: "D000123", Name: "Age"},
-			{ID: "D000126", Name: "2011 Statistical Geography Hierarchy"},
+			{ID: "D000125", Name: "Sex", Type: "standard"},
+			{ID: "D000124", Name: "Residence Type", Type: "standard"},
+			{ID: "D000123", Name: "Age", Type: "standard"},
+			{ID: "D000126", Name: "2011 Statistical Geography Hierarchy", Type: "geography", Hierarchical: true},
 		},
 	}
 
@@ -54,14 +54,15 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 			},
 			ReleaseDate: "17 January 2017",
 			NextRelease: "14 February 2017",
-			Methodology: []*models.Methodology{
-				{Title: "Consumer Price Inflation (includes all 4 indices—CPI, CPIH, RPI and RPIJ)", URL: "https://www.ons.gov.uk/economy/inflationandpriceindices/qmis/consumerpriceinflationqmi"},
-			},
+			Methodology: []*models.Methodology{{
+				Title: "Consumer Price Inflation (includes all 4 indices—CPI, CPIH, RPI and RPIJ)",
+				URL:   "https://www.ons.gov.uk/economy/inflationandpriceindices/qmis/consumerpriceinflationqmi",
+			}},
 			TermsAndConditions: "",
 		},
 		Dimensions: []*models.Dimension{
-			{ID: "SP00001", Name: "Special aggregate"},
-			{ID: "T000111", Name: "Time"},
+			{ID: "SP00001", Name: "Special aggregate", Type: "classification", Hierarchical: true},
+			{ID: "T000111", Name: "Time", Type: "Time", Hierarchical: true},
 		},
 	}
 
