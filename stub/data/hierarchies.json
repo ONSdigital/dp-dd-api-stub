@@ -1,0 +1,12 @@
+[
+  {
+    "id": "Time",
+    "name": "Time",
+    "type": "time"
+  },
+  {
+    "id": "CI_000641",
+    "name": "Special Aggregate",
+    "type": "classification"
+  }
+]

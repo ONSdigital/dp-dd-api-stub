@@ -6,6 +6,7 @@
 // data/datasets/CPI15/dimensions.json
 // data/datasets/CPI15.json
 // data/datasets.json
+// data/hierarchies.json
 // DO NOT EDIT!
 
 package stub
@@ -122,6 +123,24 @@ func dataDatasetsJson() (*asset, error) {
 	return a, err
 }
 
+// dataHierarchiesJson reads file data from disk. It returns an error on failure.
+func dataHierarchiesJson() (*asset, error) {
+	path := "/Users/FullStackForger/Gocode/src/github.com/ONSdigital/dp-dd-api-stub/stub/data/hierarchies.json"
+	name := "data/hierarchies.json"
+	bytes, err := bindataRead(path, name)
+	if err != nil {
+		return nil, err
+	}
+
+	fi, err := os.Stat(path)
+	if err != nil {
+		err = fmt.Errorf("Error reading asset info %s at %s: %v", name, path, err)
+	}
+
+	a := &asset{bytes: bytes, info: fi}
+	return a, err
+}
+
 // Asset loads and returns the asset for the given name.
 // It returns an error if the asset could not be found or
 // could not be loaded.
@@ -179,6 +198,7 @@ var _bindata = map[string]func() (*asset, error){
 	"data/datasets/CPI15/dimensions.json": dataDatasetsCpi15DimensionsJson,
 	"data/datasets/CPI15.json": dataDatasetsCpi15Json,
 	"data/datasets.json": dataDatasetsJson,
+	"data/hierarchies.json": dataHierarchiesJson,
 }
 
 // AssetDir returns the file names below a certain
@@ -233,6 +253,7 @@ var _bintree = &bintree{nil, map[string]*bintree{
 			"CPI15.json": &bintree{dataDatasetsCpi15Json, map[string]*bintree{}},
 		}},
 		"datasets.json": &bintree{dataDatasetsJson, map[string]*bintree{}},
+		"hierarchies.json": &bintree{dataHierarchiesJson, map[string]*bintree{}},
 	}},
 }}
 
