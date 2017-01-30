@@ -152,6 +152,7 @@ type HierarchyEntry struct {
 	ID        string              `json:"id"`
 	Name      string              `json:"name"`
 	LevelType *HierarchyLevelType `json:"levelType,omitempty"`
+	HasData   bool                `json:"hasData,omitempty"`	// used only for sparsely populated hierarchy
 	Options   []*HierarchyEntry   `json:"options,omitempty"`
 }
 
