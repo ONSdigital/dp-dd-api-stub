@@ -26,28 +26,28 @@
       "id": "D000125",
       "name": "Sex",
       "type": "standard",
-      "url": "http://localhost:20099/datasets/AF001EW/D000125",
+      "url": "http://localhost:20099/datasets/AF001EW/dimensions/D000125",
       "hierarchical": false
     },
     {
       "id": "D000124",
       "name": "Residence Type",
       "type": "standard",
-      "url": "http://localhost:20099/datasets/AF001EW/D000124",
+      "url": "http://localhost:20099/datasets/AF001EW/dimensions/D000124",
       "hierarchical": false
     },
     {
       "id": "D000123",
       "name": "Age",
       "type": "standard",
-      "url": "http://localhost:20099/datasets/AF001EW/D000123",
+      "url": "http://localhost:20099/datasets/AF001EW/dimensions/D000123",
       "hierarchical": false
     },
     {
       "id": "D000126",
       "name": "2011 Statistical Geography Hierarchy",
       "type": "geography",
-      "url": "http://localhost:20099/datasets/AF001EW/D000126",
+      "url": "http://localhost:20099/datasets/AF001EW/dimensions/D000126",
       "hierarchical": true
     }
   ]
