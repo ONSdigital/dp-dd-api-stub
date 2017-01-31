@@ -2,6 +2,8 @@ package dimension
 
 import (
 	"net/http"
+	"fmt"
+	"errors"
 )
 
 func Handler(w http.ResponseWriter, req *http.Request) {
@@ -9,11 +11,14 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 	switch view {
 	case "hierarchy":
 		hierarchyHandler(w, req)
-		break
 	case "list":
 		fallthrough
-	default:
+	case "":
 		listHandler(w, req)
 		break
+	default:
+		err := errors.New("Invalid query view string")
+		fmt.Println(err.Error())
+		w.WriteHeader(404)
 	}
 }
