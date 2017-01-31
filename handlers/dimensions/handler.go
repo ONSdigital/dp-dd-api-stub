@@ -1,10 +1,7 @@
 package dimensions
 
 import (
-	"encoding/json"
 	"net/http"
-
-	"github.com/ONSdigital/dp-dd-api-stub/models"
 	"github.com/ONSdigital/dp-dd-api-stub/stub"
 	"fmt"
 	"os"
@@ -19,11 +16,6 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 		os.Exit(1)
 	}
 
-	var stubData []models.Dimension = []models.Dimension{}
-	json.Unmarshal(raw, &stubData)
-
-	jsonEncoder := json.NewEncoder(w)
-	jsonEncoder.Encode(stubData)
-
+	w.Write(raw)
 	w.WriteHeader(200)
 }

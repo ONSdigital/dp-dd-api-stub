@@ -1,8 +1,6 @@
 package dataset
 
 import (
-	"encoding/json"
-	"github.com/ONSdigital/dp-dd-api-stub/models"
 	"net/http"
 	"github.com/ONSdigital/dp-dd-api-stub/stub"
 	"fmt"
@@ -18,11 +16,6 @@ func Handler(w http.ResponseWriter, req *http.Request) {
 		os.Exit(1)
 	}
 
-	var stubData models.Dataset = models.Dataset{}
-	json.Unmarshal(raw, &stubData)
-
-	jsonEncoder := json.NewEncoder(w)
-	jsonEncoder.Encode(stubData)
-
+	w.Write(raw)
 	w.WriteHeader(200)
 }
