@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"net/http"
 	"fmt"
-	"github.com/ONSdigital/dp-dd-api-stub/models"
 )
 
 func hierarchyHandler(w http.ResponseWriter, req *http.Request) {
@@ -13,10 +12,8 @@ func hierarchyHandler(w http.ResponseWriter, req *http.Request) {
 
 	hierarchy, err := getDimensionHierarchy(dimensionID)
 	if err != nil {
-		fmt.Println(err)
-		response, _ := json.Marshal(models.Dimension{})
-		w.WriteHeader(400)
-		w.Write(response)
+		fmt.Println(err.Error())
+		w.WriteHeader(404)
 		return
 	}
 
