@@ -20,7 +20,7 @@ func listHandler(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
+	w.WriteHeader(200)
 	jsonEncoder := json.NewEncoder(w)
 	jsonEncoder.Encode(dimension)
-	w.WriteHeader(200)
 }
