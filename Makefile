@@ -1,7 +1,19 @@
-build:
-	go build -o build/dp-api-spike
+build: generate
+	go build -tags 'production' -o build/dp-frontend-renderer
 
-debug: build
-	HUMAN_LOG=1 ./build/dp-api-spike
+debug: generate
+	go build -tags 'debug' -o build/dp-frontend-renderer
+	HUMAN_LOG=1 DEBUG=1 ./build/dp-frontend-renderer
 
-.PHONY: build debug
+generate:
+	# build the production version
+	go generate ./...
+	{ echo "// +build production"; cat stub/data.go; } > stub/data.go.new
+	mv stub/data.go.new stub/data.go
+
+	# build the dev version
+	cd stub; go-bindata -debug -o debug.go -pkg stub data/...
+	{ echo "// +build debug"; cat stub/debug.go; } > stub/debug.go.new
+	mv stub/debug.go.new stub/debug.go
+
+.PHONY: build debug generate

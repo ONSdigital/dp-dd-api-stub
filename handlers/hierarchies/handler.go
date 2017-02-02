@@ -1,4 +1,4 @@
-package datasets
+package hierarchies
 
 import (
 	"fmt"
@@ -7,12 +7,13 @@ import (
 )
 
 func Handler(w http.ResponseWriter, req *http.Request) {
-	raw, err := stub.Asset("data/datasets.json")
+	raw, err := stub.Asset("data/hierarchies.json")
 	if err != nil {
 		fmt.Println(err.Error())
 		w.WriteHeader(404)
 		return
 	}
+
 	w.Write(raw)
 	w.WriteHeader(200)
 }

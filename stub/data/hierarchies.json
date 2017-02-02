@@ -1,0 +1,17 @@
+[
+  {
+    "id": "TIME_001",
+    "name": "Time",
+    "type": "time"
+  },
+  {
+    "id": "CI_000641",
+    "name": "Special Aggregate",
+    "type": "classification"
+  },
+  {
+    "id": "GOEO_001",
+    "name": "Geography",
+    "type": "geography"
+  }
+]

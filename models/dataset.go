@@ -127,17 +127,39 @@ type Methodology struct {
 
 type Dimension struct {
 	ID             string             `json:"id"`
-	Name           string             `json:"name"` // Sex
-	Type           string             `json:"type"` // Dimension type
+	Name           string             `json:"name"` // eg.: Sex
+	Type           string             `json:"type"` // standard, classification, time, geography
+	URL            string             `json:"url"`
+	Hierarchical   bool               `json:"hierarchical"`
 	Options        []*DimensionOption `json:"options,omitempty"`
 	SelectedOption *DimensionOption   `json:"selectedOption,omitempty"`
 }
 
 type DimensionOption struct {
-	ID   string `json:"id"`
-	Name string `json:"name"` // Male
-
+	ID      string             `json:"id"`
+	Name    string             `json:"name"` // Male
 	Options []*DimensionOption `json:"options,omitempty"`
+}
+
+type Hierarchy struct {
+	ID      string            `json:"id"`
+	Name    string            `json:"name"`
+	Type    string            `json:"type"`
+	Options []*HierarchyEntry `json:"options,omitempty"`
+}
+
+type HierarchyEntry struct {
+	ID        string              `json:"id"`
+	Name      string              `json:"name"`
+	LevelType *HierarchyLevelType `json:"levelType,omitempty"`
+	HasData   bool                `json:"hasData,omitempty"`	// used only for sparsely populated hierarchy
+	Options   []*HierarchyEntry   `json:"options,omitempty"`
+}
+
+type HierarchyLevelType struct {
+	Code  string `json:"code"`
+	Name  string `json:"name"`
+	Level int    `json:"level"`
 }
 
 type Row struct {

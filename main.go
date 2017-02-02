@@ -16,6 +16,8 @@ import (
 	"github.com/ONSdigital/dp-dd-api-stub/handlers/geoareatype"
 	"github.com/ONSdigital/dp-dd-api-stub/handlers/geohierarchies"
 	"github.com/ONSdigital/dp-dd-api-stub/handlers/geohierarchy"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/hierarchies"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/hierarchy"
 	"github.com/ONSdigital/dp-dd-api-stub/handlers/search"
 	"github.com/ONSdigital/go-ns/handlers/healthcheck"
 	"github.com/ONSdigital/go-ns/handlers/requestID"
@@ -41,12 +43,19 @@ func main() {
 	router.Options("/{x:.*}", func(w http.ResponseWriter, r *http.Request) {})
 
 	router.Get("/datasets/search", search.Handler)
+
+	// datasets/{datasetId}/dimensions/{dimensionId}			<- dimension with list of options
 	router.Get("/datasets/{datasetId}/dimensions/{dimensionId}", dimension.Handler) // data
-	router.Get("/datasets/{datasetId}/dimensions", dimensions.Handler)              // data
-	router.Get("/datasets/{datasetId}/data", data.Handler)                          // data
-	router.Get("/datasets/{datasetId}", dataset.Handler)                            // provide detailed information for a given dataset
-	router.Get("/datasets", datasets.Handler)                                       // list high level dataset
-	router.Get("/download", download.Handler)                                       // list high level dataset
+	router.Get("/datasets/{datasetId}/dimensions", dimensions.Handler) // data
+
+	router.Get("/datasets/{datasetId}/data", data.Handler)             // data
+	router.Get("/datasets/{datasetId}", dataset.Handler)               // provide detailed information for a given dataset
+	router.Get("/datasets", datasets.Handler)                          // list high level dataset
+
+	router.Get("/hierarchies/{hierarchyId}", hierarchy.Handler)
+	router.Get("/hierarchies", hierarchies.Handler)
+
+	router.Get("/download", download.Handler) // list high level dataset
 	router.Get("/dataresources/{resourceId}", dataresource.Handler)
 
 	// Geographic Hierarchies and Areas

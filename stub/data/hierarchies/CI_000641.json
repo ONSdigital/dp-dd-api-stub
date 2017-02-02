@@ -1,0 +1,107 @@
+{
+  "id": "CI_000641",
+  "name": "Special Aggregate",
+  "type": "classification",
+  "options": [
+    {
+      "id": "CI_0004216",
+      "name": "CPI (overall index)"
+    },
+    {
+      "id": "CI_0004331",
+      "name": "01 Food and non-alcoholic beverages",
+      "options": [
+        {
+          "id": "CI_0004217",
+          "name": "01.1 Food",
+          "options": [
+            {
+              "id": "CI_0004252",
+              "name": "01.1.1 Bread and cereals"
+            },
+            {
+              "id": "CI_0004253",
+              "name": "01.1.2 Meat"
+            },
+            {
+              "id": "CI_0004254",
+              "name": "01.1.3 Fish"
+            },
+            {
+              "id": "CI_0004255",
+              "name": "01.1.4 Milk"
+            },
+            {
+              "id": "CI_0004256",
+              "name": "01.1.5 Oils and fats"
+            },
+            {
+              "id": "CI_0004257",
+              "name": "01.1.6 Fruit"
+            },
+            {
+              "id": "CI_0004258",
+              "name": "01.1.7 Vegetables including potatoes and tubers"
+            },
+            {
+              "id": "CI_0004259",
+              "name": "01.1.8 Sugar, jam, syrups, chocolate and confectionery"
+            },
+            {
+              "id": "CI_0004260",
+              "name": "01.1.9 Food products (nec)"
+            }
+          ]
+        },
+        {
+          "id": "CI_0004218",
+          "name": "01.2 Non-alcoholic beverages",
+          "options": [
+            {
+              "id": "CI_0004252",
+              "name": "01.2.1 Coffee, tea and cocoa"
+            },
+            {
+              "id": "CI_0004253",
+              "name": "01.2.2 Mineral waters, soft drinks and juices"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CI_0004332",
+      "name": "02 Alcoholic beverages and tobacco",
+      "options": [
+        {
+          "id": "CI_0004219",
+          "name": "02.1 Alcoholic beverages",
+          "options": [
+            {
+              "id": "CI_0004263",
+              "name": "02.1.1 Spirits"
+            },
+            {
+              "id": "CI_0004264",
+              "name": "02.1.2 Wine "
+            },
+            {
+              "id": "CI_0004265",
+              "name": "02.1.3 Beer"
+            }
+          ]
+        },
+        {
+          "id": "CI_0004220",
+          "name": "02.2 Tobacco",
+          "options": [
+            {
+              "id": "CI_0004266",
+              "name": "02.2.0 Tobacco"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
