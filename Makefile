@@ -7,7 +7,7 @@ debug: generate
 
 generate: ${GOPATH}/bin/go-bindata
 	# build the production version
-	cd stub; ${GOPATH}/bin/go-bindata -o templates.go -pkg stub data/...
+	cd stub; ${GOPATH}/bin/go-bindata -o data.go -pkg stub data/...
 	{ echo "// +build production"; cat stub/data.go; } > stub/data.go.new
 	mv stub/data.go.new stub/data.go
 
