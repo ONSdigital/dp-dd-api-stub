@@ -1,9 +1,9 @@
 build: generate
-	go build -tags 'production' -o build/dp-frontend-renderer
+	go build -tags 'production' -o build/dp-dd-api-stub
 
 debug: generate
-	go build -tags 'debug' -o build/dp-frontend-renderer
-	HUMAN_LOG=1 DEBUG=1 ./build/dp-frontend-renderer
+	go build -tags 'debug' -o build/dp-dd-api-stub
+	HUMAN_LOG=1 DEBUG=1 ./build/dp-dd-api-stub
 
 generate: ${GOPATH}/bin/go-bindata
 	# build the production version
