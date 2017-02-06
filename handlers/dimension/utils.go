@@ -46,6 +46,7 @@ func getDimensionHierarchy(dimensionID string) (hierarchy *models.Hierarchy, err
 	}
 
 	json.Unmarshal(raw, &hierarchy)
+	hierarchy.ID = dimensionID;
 	updateDimensionHierarchOptions(hierarchy.Options)
 	return hierarchy, nil
 }
