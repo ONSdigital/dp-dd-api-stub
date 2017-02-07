@@ -4,7 +4,6 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/ONSdigital/dp-dd-api-stub/handlers/data"
 	"github.com/ONSdigital/dp-dd-api-stub/handlers/dataresource"
 	"github.com/ONSdigital/dp-dd-api-stub/handlers/dataset"
 	"github.com/ONSdigital/dp-dd-api-stub/handlers/datasets"
@@ -44,12 +43,26 @@ func main() {
 
 	router.Get("/datasets/search", search.Handler)
 
+
+	// Old dimensions URIs, kept for refernce
+	/*
 	// datasets/{datasetId}/dimensions/{dimensionId}			<- dimension with list of options
 	router.Get("/datasets/{datasetId}/dimensions/{dimensionId}", dimension.Handler) // data
 	router.Get("/datasets/{datasetId}/dimensions", dimensions.Handler) // data
 
 	router.Get("/datasets/{datasetId}/data", data.Handler)             // data
 	router.Get("/datasets/{datasetId}", dataset.Handler)               // provide detailed information for a given dataset
+	*/
+
+	// this is to replace the legacy /datasets/{datasetId}
+	router.Get("/datasets/version/{uuid}", dataset.LegacyHandler)
+	router.Get("/datasets/{datasetId}/editions/{edition}/versions/{version}/dimensions/{dimensionID}", dimension.Handler) // single dimension
+	router.Get("/datasets/{datasetId}/editions/{edition}/versions/{version}/dimensions", dimensions.Handler) // provides the dimensions for the given version
+	router.Get("/datasets/{datasetId}/editions/{edition}/versions/{version}", dataset.Handler) // provides the dataset information for the given version
+	router.Get("/datasets/{datasetId}/editions/{edition}", dataset.Handler) // provides the versions for the given edition
+	router.Get("/datasets/{datasetId}", dataset.Handler)               // provides the editions and versions for this dataset
+
+
 	router.Get("/datasets", datasets.Handler)                          // list high level dataset
 
 	router.Get("/hierarchies/{hierarchyId}", hierarchy.Handler)

@@ -9,8 +9,8 @@ import (
 	"encoding/json"
 )
 
-func findDimension(datasetID string, dimensionID string)  (dimension *models.Dimension, err error) {
-	raw, err := stub.Asset("data/datasets/" + datasetID + "/dimensions.json")
+func findDimension(datasetID string, edition string, version string,dimensionID string)  (dimension *models.Dimension, err error) {
+	raw, err := stub.Asset("data/datasets/" + datasetID + "/" + edition + "/" + version + "/dimensions.json")
 	if err != nil {
 		fmt.Println(err.Error())
 		os.Exit(1)
