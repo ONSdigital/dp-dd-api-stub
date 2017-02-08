@@ -1,6 +1,5 @@
 {
-  "id": "CPI15E2017V1",
-  "customerFacingId": "CPI15",
+  "datasetId": "CPI15",
   "title": "CPI15 Consumer Prices Index (COICOP).",
   "url": "http://localhost:20099/datasets/CPI15/edition/2017/version/1",
   "edition": "2016",

@@ -1,6 +1,6 @@
 {
   "id": "AF001EWE2016V1",
-  "customerFacingId": "AF001EW",
+  "datasetId": "AF001EW",
   "title": "AF001EW  Members of the Armed Forces by residence type by sex by age",
   "url": "http://localhost:20099/datasets/AF001EW/edition/2016/version/1",
   "edition": "2016",
@@ -16,9 +16,9 @@
     "nextReleaseDate": "To be announced",
     "nationalStatistics": true,
     "associatedPublications": [
-      "http://localhost:20099/datasets/AF002/edition/2016/version/1",
-      "http://localhost:20099/datasets/AF003/edition/2016/version/1",
-      "http://localhost:20099/datasets/AF004/edition/2016/version/1"
+      "http://localhost:20099/datasets/AF002/",
+      "http://localhost:20099/datasets/AF003/",
+      "http://localhost:20099/datasets/AF004/"
     ],
     "methodology": null,
     "termsAndConditions": "N/A"
