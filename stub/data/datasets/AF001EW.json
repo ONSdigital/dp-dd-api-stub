@@ -44,11 +44,11 @@
       "hierarchical": false
     },
     {
-      "id": "D000126",
-      "name": "2011 Statistical Geography Hierarchy",
+      "id": "Geographic_Hierarchy",
+      "name": "Geographic_Hierarchy",
       "type": "geography",
-      "url": "http://localhost:20099/datasets/AF001EW/dimensions/D000126",
-      "hierarchical": true
+      "hierarchical": true,
+      "url": "http://localhost:20099/datasets/AF001EW/dimensions/Geographic_Hierarchy"
     }
   ]
 }

@@ -33,6 +33,7 @@ func getDimensionHierarchy(dimensionID string) (hierarchy *models.Hierarchy, err
 	switch dimensionID {
 	case "SP00001": hierarchyID = "CI_000641"; break;
 	case "T000111": hierarchyID = "TIME_001"; break;
+	case "Geographic_Hierarchy": hierarchyID = "Geographic_Hierarchy"; break;
 	}
 
 	if (hierarchyID == "") {
