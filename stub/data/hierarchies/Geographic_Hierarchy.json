@@ -1,2367 +1,2417 @@
 {
   "id": "Geographic_Hierarchy",
   "name": "Geographic_Hierarchy",
+  "url": "http://localhost:20099/datasets/7d227be0-92c3-4c72-90b7-59a58c8f1539/dimensions/Geographic_Hierarchy",
   "type": "geography",
+  "hierarchical": true,
   "options": [
     {
-      "id": "c2f76d61-faeb-4d6e-b54c-ba8346b3c376",
-      "code": "K04000001",
-      "name": "England and Wales",
-      "levelType": {
-        "id": "NAT",
-        "name": "England and Wales",
-        "level": 2
-      }
-    },
-    {
-      "id": "a6eb02bd-1b77-4379-b12d-d5f040fd4f04",
-      "code": "E92000001",
-      "name": "England",
-      "levelType": {
-        "id": "CTRY",
-        "name": "Country",
-        "level": 3
-      }
-    },
-    {
-      "id": "28f6cdd1-a281-45e3-b028-225583dc30ac",
-      "code": "W92000004",
-      "name": "Wales",
-      "levelType": {
-        "id": "CTRY",
-        "name": "Country",
-        "level": 3
-      }
-    },
-    {
-      "id": "b722c1dc-0b40-41db-b104-8ae0a97fe6bb",
-      "code": "E12000004",
-      "name": "East Midlands",
-      "levelType": {
-        "id": "RGN",
-        "name": "Region",
-        "level": 4
-      }
-    },
-    {
-      "id": "f8212fc8-79b7-476a-a279-5629f5ac66e0",
-      "code": "E12000006",
-      "name": "East of England",
-      "levelType": {
-        "id": "RGN",
-        "name": "Region",
-        "level": 4
-      }
-    },
-    {
-      "id": "67cf2cf8-73a6-487b-b240-c01ff21ebbb1",
-      "code": "E12000007",
-      "name": "London",
-      "levelType": {
-        "id": "RGN",
-        "name": "Region",
-        "level": 4
-      }
-    },
-    {
-      "id": "35db376a-a8ae-4b81-86f6-195228e7af31",
-      "code": "E12000001",
-      "name": "North East",
-      "levelType": {
-        "id": "RGN",
-        "name": "Region",
-        "level": 4
-      }
-    },
-    {
-      "id": "d22e76f8-47d8-4dbf-8594-424d0d7e128e",
-      "code": "E12000002",
-      "name": "North West",
-      "levelType": {
-        "id": "RGN",
-        "name": "Region",
-        "level": 4
-      }
-    },
-    {
-      "id": "a5309ba1-f310-437c-8c71-e13459b5acbc",
-      "code": "E12000008",
-      "name": "South East",
-      "levelType": {
-        "id": "RGN",
-        "name": "Region",
-        "level": 4
-      }
-    },
-    {
-      "id": "e6e44c53-a98b-41ee-bd56-647a610d5664",
-      "code": "E12000009",
-      "name": "South West",
-      "levelType": {
-        "id": "RGN",
-        "name": "Region",
-        "level": 4
-      }
-    },
-    {
-      "id": "19912bf3-2aab-4a45-bbaf-f006234f14ba",
-      "code": "E12000005",
-      "name": "West Midlands",
-      "levelType": {
-        "id": "RGN",
-        "name": "Region",
-        "level": 4
-      }
-    },
-    {
-      "id": "be863d4d-fe5c-4791-b7db-26d52ebd51e6",
-      "code": "E12000003",
-      "name": "Yorkshire and The Humber",
-      "levelType": {
-        "id": "RGN",
-        "name": "Region",
-        "level": 4
-      }
-    },
-    {
-      "id": "91beafd1-0665-4ef5-bfbc-138a077b72ab",
-      "code": "E09000006",
-      "name": "Bromley",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "740d8d3a-a379-4853-a55e-78b476e6edd1",
-      "code": "E09000007",
-      "name": "Camden",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "7c2a6119-08a3-4e0c-a49b-ec9c2a21d994",
-      "code": "E09000008",
-      "name": "Croydon",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "737e157f-764b-4dc9-9c88-a53a97ee4c94",
-      "code": "E09000011",
-      "name": "Greenwich",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "70414a70-f829-43ac-aa6a-642dcfcc9896",
-      "code": "E09000013",
-      "name": "Hammersmith and Fulham",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "0d112da3-1a71-4fdb-af07-e79529604fa9",
-      "code": "E09000015",
-      "name": "Harrow",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "6c4a3d1d-2e2c-4b3b-bb1f-bd10db787d71",
-      "code": "E09000017",
-      "name": "Hillingdon",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "c119b66c-68df-4948-80b8-a2f3c81aef18",
-      "code": "E09000018",
-      "name": "Hounslow",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "e6564397-3072-40a3-a2ed-f4747c875e69",
-      "code": "E09000021",
-      "name": "Kingston upon Thames",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "77656223-283a-4a7b-9ad8-6b6d40b6ae6b",
-      "code": "E09000022",
-      "name": "Lambeth",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "91cf2e59-79bc-4a2a-9be4-2abdb98131af",
-      "code": "E09000027",
-      "name": "Richmond upon Thames",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "ddeb3277-c478-44e6-b5ab-f1484884948d",
-      "code": "E09000030",
-      "name": "Tower Hamlets",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "b47ddaf7-29eb-49aa-8e93-390f64bf9c0f",
-      "code": "E09000032",
-      "name": "Wandsworth",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "269edafd-43cd-4be7-ad53-905175af5edd",
-      "code": "E09000033",
-      "name": "Westminster",
-      "levelType": {
-        "id": "LONB",
-        "name": "London Borough ",
-        "level": 5
-      }
-    },
-    {
-      "id": "6e6a5b69-9480-41b2-bbc1-437b99d49cfd",
-      "code": "E08000016",
-      "name": "Barnsley",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "88fb02b6-d4b7-4306-a345-ce230b965f2d",
-      "code": "E08000025",
-      "name": "Birmingham",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "5eb54adc-e2da-4997-82da-9f179d2ad1dd",
-      "code": "E08000001",
-      "name": "Bolton",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "1a76b007-ea18-4ab4-985e-08ef3c86aad5",
-      "code": "E08000032",
-      "name": "Bradford",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "392ff387-51e0-43d0-bd5e-51742631088c",
-      "code": "E08000002",
-      "name": "Bury",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "0771b06a-1e8d-4156-8ec6-238860009904",
-      "code": "E08000033",
-      "name": "Calderdale",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "c17a30fe-b1a2-44c6-8145-aa7dfe449989",
-      "code": "E08000026",
-      "name": "Coventry",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "c0cf3174-1433-49dd-8669-64ff675d4d98",
-      "code": "E08000017",
-      "name": "Doncaster",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "bb928a1c-0757-4881-8503-cd006615cef8",
-      "code": "E08000027",
-      "name": "Dudley",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "160aad07-086f-4762-9837-8426626ba9c1",
-      "code": "E08000020",
-      "name": "Gateshead",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "0d20061d-281a-4600-a64a-1df50b2fba81",
-      "code": "E08000034",
-      "name": "Kirklees",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "2e06d70a-d960-4446-a719-6e16ad0edad7",
-      "code": "E08000011",
-      "name": "Knowsley",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "c5d15838-2cda-48ed-8e7f-e890e7c3e292",
-      "code": "E08000035",
-      "name": "Leeds",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "d248add4-520f-4ad2-986a-84d477c1cedb",
-      "code": "E08000012",
-      "name": "Liverpool",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "ca3b471a-9116-4a0c-b959-2badfb56e423",
-      "code": "E08000003",
-      "name": "Manchester",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "b7739033-0e36-42d5-92aa-80eac329aec6",
-      "code": "E08000021",
-      "name": "Newcastle upon Tyne",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "ad26be84-f4dc-46b1-acd9-acb22fb06cd1",
-      "code": "E08000022",
-      "name": "North Tyneside",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "5258e1eb-751f-4702-8411-665a6cb39ca4",
-      "code": "E08000004",
-      "name": "Oldham",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "0666eb8a-eca8-4847-8e4b-962364903e57",
-      "code": "E08000005",
-      "name": "Rochdale",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "ddb8b3b5-b1ac-4247-906e-594f9f0af830",
-      "code": "E08000018",
-      "name": "Rotherham",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "95cda5f5-f651-47b3-bdbf-dcf6b21bde74",
-      "code": "E08000006",
-      "name": "Salford",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "b37a91e7-f61b-405a-8050-4dbd423d8017",
-      "code": "E08000028",
-      "name": "Sandwell",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "1e1388be-83dd-4351-8b43-daf1327051d0",
-      "code": "E08000014",
-      "name": "Sefton",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "869722e4-30a2-4835-a27b-b4df0fb6ed26",
-      "code": "E08000019",
-      "name": "Sheffield",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "140260de-7f04-4337-b2ba-9a68b87c3e52",
-      "code": "E08000029",
-      "name": "Solihull",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "feab1367-2d52-49bd-bcd4-73946bcf6adf",
-      "code": "E08000023",
-      "name": "South Tyneside",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "4724e3e4-3405-4271-aef5-7955b114d9b8",
-      "code": "E08000013",
-      "name": "St. Helens",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "202f94de-c3d4-43b1-89fd-17930ddeda6d",
-      "code": "E08000007",
-      "name": "Stockport",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "6faa8c41-448c-48f1-aa80-0ff9b82a3287",
-      "code": "E08000024",
-      "name": "Sunderland",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "c5b19a1c-fa5e-4b23-b7ab-553a3ee0bf1c",
-      "code": "E08000008",
-      "name": "Tameside",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "1c1fdb8b-5d97-47fc-9ca3-c1f5cb2cd2cb",
-      "code": "E08000009",
-      "name": "Trafford",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "2631c658-f82b-4d01-83d5-a7caf6685cb6",
-      "code": "E08000036",
-      "name": "Wakefield",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "a688309b-1a26-41c2-aadb-77910f4c679b",
-      "code": "E08000030",
-      "name": "Walsall",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "a03bfae7-3c69-4094-92b1-e2babf747501",
-      "code": "E08000010",
-      "name": "Wigan",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "b4085d8a-b027-4427-ad77-0fbbb7045cf3",
-      "code": "E08000015",
-      "name": "Wirral",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "9d905ff4-b97c-451f-a819-121edfef7aaf",
-      "code": "E08000031",
-      "name": "Wolverhampton",
-      "levelType": {
-        "id": "MD",
-        "name": "Metropolitan District ",
-        "level": 5
-      }
-    },
-    {
-      "id": "1c2ac78e-04c9-4d1d-8a39-c819ebce23eb",
-      "code": "E07000026",
-      "name": "Allerdale",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "89ef2891-f0b8-4b11-bb46-17b4dda4177d",
-      "code": "E07000224",
-      "name": "Arun",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "2b0a08c8-a0b0-4976-83cf-8b17e0a6c1b9",
-      "code": "E07000170",
-      "name": "Ashfield",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "decb170a-3ae3-4adb-92c5-ea52e3ffab3a",
-      "code": "E07000105",
-      "name": "Ashford",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "008fd818-accb-4d39-a227-747a6a2ddb67",
-      "code": "E07000004",
-      "name": "Aylesbury Vale",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "10de2bf2-11db-4d7e-86ff-e6898be7ca32",
-      "code": "E07000200",
-      "name": "Babergh",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "6475b808-9604-4d5b-bb4f-5b5d864b98a4",
-      "code": "E07000027",
-      "name": "Barrow-in-Furness",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "8602ac03-a748-4d72-a5f1-e59fe31fbfb6",
-      "code": "E07000084",
-      "name": "Basingstoke and Deane",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "73bb447c-b75e-4d0a-8562-e27999ee519f",
-      "code": "E07000171",
-      "name": "Bassetlaw",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "2d2b91e0-2518-44a5-837f-d61f33c26020",
-      "code": "E07000143",
-      "name": "Breckland",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "525a7bb5-4971-4a40-83ba-bace1318fdb8",
-      "code": "E07000144",
-      "name": "Broadland",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "33b3f368-0054-433e-aa51-db1e014c12d2",
-      "code": "E07000172",
-      "name": "Broxtowe",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "8404f98e-8d05-4f53-a6d4-f5e5fcc6b457",
-      "code": "E07000008",
-      "name": "Cambridge",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "8fcce061-84c0-4ced-89d1-9ca3332c0f01",
-      "code": "E07000106",
-      "name": "Canterbury",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "a037a588-5d40-4a24-84ab-7bd23d61a203",
-      "code": "E07000028",
-      "name": "Carlisle",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "1e682263-d196-4ac3-b7bd-0e943e8547d5",
-      "code": "E07000130",
-      "name": "Charnwood",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "618a21db-cd39-4bb4-97a4-1c37ee4342f8",
-      "code": "E07000078",
-      "name": "Cheltenham",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "6f5e45e7-cddd-4436-90e0-f2a60ab74c97",
-      "code": "E07000177",
-      "name": "Cherwell",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "16a3a7e0-1d87-4117-8288-bc94100190c8",
-      "code": "E07000225",
-      "name": "Chichester",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "3373042a-30df-4f20-81cc-891d04fde6b8",
-      "code": "E07000071",
-      "name": "Colchester",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "ea517450-cb12-4a9b-9124-58e5c7d93d3b",
-      "code": "E07000079",
-      "name": "Cotswold",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "4ea4adfb-2547-4c8f-86d9-968c902d5a30",
-      "code": "E07000108",
-      "name": "Dover",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "828448e9-d49e-40a9-b0f2-d63b480de52f",
-      "code": "E07000009",
-      "name": "East Cambridgeshire",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "b63d437c-f944-49c4-aeae-e0160433345a",
-      "code": "E07000040",
-      "name": "East Devon",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "8d22965f-2dc7-4f81-9d74-18c80f9ec049",
-      "code": "E07000049",
-      "name": "East Dorset",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "0119431b-5d4e-4049-8ed5-b5b6522bfb60",
-      "code": "E07000085",
-      "name": "East Hampshire",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "db37fe3b-96bf-4d92-a8d7-6ee7bbd30e40",
-      "code": "E07000137",
-      "name": "East Lindsey",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "d1f7f0eb-c39f-4d5b-886a-87a67f641ca5",
-      "code": "E07000152",
-      "name": "East Northamptonshire",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "4bcf7dd0-c165-490a-b815-164423aa4bdc",
-      "code": "E07000086",
-      "name": "Eastleigh",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "56df32b2-b711-4ccf-bc43-22d8dd0c9c80",
-      "code": "E07000036",
-      "name": "Erewash",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "77decc46-b929-458b-a9f4-6664f1575a9e",
-      "code": "E07000041",
-      "name": "Exeter",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "52d4f892-7ef1-4a7c-a5c9-9fb04ace8aca",
-      "code": "E07000087",
-      "name": "Fareham",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "9f1bbf29-c9a6-4927-9532-695c98dbe608",
-      "code": "E07000010",
-      "name": "Fenland",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "919a8c9e-7811-4e14-a71c-61369c136241",
-      "code": "E07000201",
-      "name": "Forest Heath",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "52a49a1b-4eac-4480-9fcf-e31cc2cb4c6f",
-      "code": "E07000080",
-      "name": "Forest of Dean",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "016d51b0-dfe3-4fc3-b7e6-80ce8eba42f9",
-      "code": "E07000119",
-      "name": "Fylde",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "1a2e5183-f54a-4860-a841-4dde9337ba26",
-      "code": "E07000081",
-      "name": "Gloucester",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "09a002a7-467b-446c-9f54-4828064e7d5f",
-      "code": "E07000088",
-      "name": "Gosport",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "068577dd-d0bb-4505-83b9-bb98579f9dba",
-      "code": "E07000209",
-      "name": "Guildford",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "33baf179-6d36-4cfb-be3f-e94f0d505461",
-      "code": "E07000164",
-      "name": "Hambleton",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "ebfbfea8-2db5-4abc-8097-1c86b0e560ef",
-      "code": "E07000165",
-      "name": "Harrogate",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "4fd18b43-915e-4081-b6c4-06aa656dafc3",
-      "code": "E07000089",
-      "name": "Hart",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "07c2a497-94a3-4ca2-baa8-e90c4b8fe17a",
-      "code": "E07000090",
-      "name": "Havant",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "d35dcbdc-fd9d-46fd-9928-25eb06abd1e8",
-      "code": "E07000098",
-      "name": "Hertsmere",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "9e62ef3d-d3cf-4068-b631-53e2d538b971",
-      "code": "E07000011",
-      "name": "Huntingdonshire",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "8b4e5880-affd-4ce6-948d-5e81b685ba18",
-      "code": "E07000202",
-      "name": "Ipswich",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "adb0e2c9-5f98-4b04-aa27-8832862504bc",
-      "code": "E07000146",
-      "name": "King's Lynn and West Norfolk",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "95076bce-5c12-4b22-9bc2-6166a3c93ee2",
-      "code": "E07000121",
-      "name": "Lancaster",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "05d842b6-f779-4cf3-a2e8-be95009bcfd0",
-      "code": "E07000194",
-      "name": "Lichfield",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "3d88e3b7-a2a7-4b10-8b01-b67061d83d0b",
-      "code": "E07000138",
-      "name": "Lincoln",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "cf0eae6d-427d-4263-8ae6-bae935416857",
-      "code": "E07000110",
-      "name": "Maidstone",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "0f85cc7f-a692-4229-90a1-e32ca0670983",
-      "code": "E07000174",
-      "name": "Mansfield",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "f853f86e-59e7-4255-ac82-5c3789e87f76",
-      "code": "E07000133",
-      "name": "Melton",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "ca1cb505-060e-4736-8a28-b56df7349e37",
-      "code": "E07000187",
-      "name": "Mendip",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "735c91dc-e1c1-47c7-8bda-6cfdb55e567a",
-      "code": "E07000042",
-      "name": "Mid Devon",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "edb77821-1a71-42a0-9e80-9f4bffc3dc5b",
-      "code": "E07000203",
-      "name": "Mid Suffolk",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "26789055-7f8d-44db-94f4-e4c461bf0315",
-      "code": "E07000091",
-      "name": "New Forest",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "265a1285-1718-428f-9f69-07ad6fbe5eff",
-      "code": "E07000175",
-      "name": "Newark and Sherwood",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "a22fcce0-772b-4cfb-90ac-001aa4c4e517",
-      "code": "E07000195",
-      "name": "Newcastle-under-Lyme",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "fb8b30fa-e86a-4553-8aa6-8913c1af3fd4",
-      "code": "E07000043",
-      "name": "North Devon",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "42282073-1157-4cea-bd15-2638806db385",
-      "code": "E07000050",
-      "name": "North Dorset",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "c35f0e8a-9ad0-4d64-8c1e-0023ab42e3a0",
-      "code": "E07000139",
-      "name": "North Kesteven",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "96fea96c-5a69-4e51-ba84-a6e6fd99b16d",
-      "code": "E07000147",
-      "name": "North Norfolk",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "75fd43d6-4e54-499a-97c2-64423af684e5",
-      "code": "E07000154",
-      "name": "Northampton",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "55aed834-6fd8-4c52-8c7a-14f702cae659",
-      "code": "E07000148",
-      "name": "Norwich",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "37e8066d-7c97-46b2-84f2-9e666416b2d1",
-      "code": "E07000219",
-      "name": "Nuneaton and Bedworth",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "57ecf305-df86-4f01-910a-e6e467960d12",
-      "code": "E07000178",
-      "name": "Oxford",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "d12ef2e4-65fd-4bb6-9b9a-4663daaaa740",
-      "code": "E07000123",
-      "name": "Preston",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "00adbabc-afdd-40f6-b682-1edbf5185839",
-      "code": "E07000051",
-      "name": "Purbeck",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "b952fdd6-3c8c-4838-8329-dfdd96699f5d",
-      "code": "E07000166",
-      "name": "Richmondshire",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "6261cc19-09e8-422e-a857-6427f7f90919",
-      "code": "E07000220",
-      "name": "Rugby",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "8d68bebb-6dea-487d-bc11-2b8a1e8226f8",
-      "code": "E07000092",
-      "name": "Rushmoor",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "4b59b605-2046-4701-914f-9fb88b118801",
-      "code": "E07000168",
-      "name": "Scarborough",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "de93010c-c3d9-44f3-8ce1-f354c7ab46b9",
-      "code": "E07000188",
-      "name": "Sedgemoor",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "7bba6c67-4040-4a3f-ab61-483d1c55995f",
-      "code": "E07000169",
-      "name": "Selby",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "468869df-c605-415c-8bb8-2a59cf780e27",
-      "code": "E07000112",
-      "name": "Shepway",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "a931ea98-d0fe-40f0-af9a-9cb14d84c9c7",
-      "code": "E07000006",
-      "name": "South Bucks",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "ebd63fb0-3c8b-4a48-93e1-b1d6eea22440",
-      "code": "E07000012",
-      "name": "South Cambridgeshire",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "47810962-bbcf-437d-9a3d-da58be4b5e25",
-      "code": "E07000044",
-      "name": "South Hams",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "04175f17-af8c-428e-b168-0f0304932377",
-      "code": "E07000140",
-      "name": "South Holland",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "0af38bdb-6a37-4619-9f4d-a3dfceaf0eac",
-      "code": "E07000141",
-      "name": "South Kesteven",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "bcc1f6ec-c393-43cc-9e8d-f62f19bad0f3",
-      "code": "E07000149",
-      "name": "South Norfolk",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "b647e4a7-5769-4306-a603-0d917c507a86",
-      "code": "E07000155",
-      "name": "South Northamptonshire",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "06163ee3-2cec-49cf-9320-24f04fe71d31",
-      "code": "E07000179",
-      "name": "South Oxfordshire",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "24d1801e-f391-456c-bf07-e4e2cc30465b",
-      "code": "E07000189",
-      "name": "South Somerset",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "d635460f-34fe-4af2-a80a-4cec4aa327d4",
-      "code": "E07000204",
-      "name": "St Edmundsbury",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "635b271c-9f49-4748-9328-0cc555febfc9",
-      "code": "E07000197",
-      "name": "Stafford",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "ab3e297b-bf5e-4481-98a3-57731a6c7f02",
-      "code": "E07000221",
-      "name": "Stratford-on-Avon",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "dd255d53-941f-4864-b26b-b3216d1658ee",
-      "code": "E07000082",
-      "name": "Stroud",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "74a37146-8df8-43f7-bd21-3b86b4120bf6",
-      "code": "E07000205",
-      "name": "Suffolk Coastal",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "2e0ec772-89eb-4245-97cc-31c43973ddf0",
-      "code": "E07000214",
-      "name": "Surrey Heath",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "3abf6c91-7336-43f6-a158-fe5969a0b88a",
-      "code": "E07000190",
-      "name": "Taunton Deane",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "45288450-cb10-4853-83cc-c9dc2c921168",
-      "code": "E07000045",
-      "name": "Teignbridge",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "bfad09e3-9c1f-49c6-9450-e6da13377a5d",
-      "code": "E07000093",
-      "name": "Test Valley",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "6b3fb8b1-da65-4af6-9ad2-f789d0e0583c",
-      "code": "E07000083",
-      "name": "Tewkesbury",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "e7b65b32-8161-4da7-8ae8-4606fa1baced",
-      "code": "E07000114",
-      "name": "Thanet",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "be4277ca-d6ca-4603-83ff-9abf60845d05",
-      "code": "E07000102",
-      "name": "Three Rivers",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "8a6c3982-f684-4afb-8744-da9c175da88a",
-      "code": "E07000077",
-      "name": "Uttlesford",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "d1f6f108-8bef-4cac-833b-a6fa9bae7879",
-      "code": "E07000180",
-      "name": "Vale of White Horse",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "eb96f54d-f015-4c3b-93ee-aaa06bdafa89",
-      "code": "E07000206",
-      "name": "Waveney",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "111de45e-b6e3-41c3-b43d-52a30f8775ba",
-      "code": "E07000216",
-      "name": "Waverley",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "7993e42f-655b-4e89-ac26-a51702562b9b",
-      "code": "E07000047",
-      "name": "West Devon",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "8758d224-38f7-4de2-9661-d4640b98a29b",
-      "code": "E07000052",
-      "name": "West Dorset",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "04dd6449-1f0d-4e0b-9bf9-b893bc5b3229",
-      "code": "E07000142",
-      "name": "West Lindsey",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "466c9eb9-c002-416e-b7f7-779a098e67bd",
-      "code": "E07000181",
-      "name": "West Oxfordshire",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "057cf86d-ed1b-4c60-b5bd-132af29e216f",
-      "code": "E07000053",
-      "name": "Weymouth and Portland",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "8af26c40-2457-419b-a2ef-b88204364a22",
-      "code": "E07000094",
-      "name": "Winchester",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "5a5e2ea4-e60c-47ff-abdf-8e0af3167f2c",
-      "code": "E07000217",
-      "name": "Woking",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "aa19dfd9-6ab1-4e8e-a14a-a22961574d3b",
-      "code": "E07000238",
-      "name": "Wychavon",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "14d6b16e-bf8a-4283-8fff-b712778da83c",
-      "code": "E07000007",
-      "name": "Wycombe",
-      "levelType": {
-        "id": "NMD",
-        "name": "Non-metropolitan District",
-        "level": 5
-      }
-    },
-    {
-      "id": "e9b4bee1-717c-4ac8-a9d0-4f6a4f8d0c16",
-      "code": "E06000022",
-      "name": "Bath and North East Somerset",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "1dc0274e-9c0d-4f64-a515-04f095ddb378",
-      "code": "E06000009",
-      "name": "Blackpool",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "f123dfe6-fa0d-4921-8f95-1b0c323ffba4",
-      "code": "E06000028",
-      "name": "Bournemouth",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "41554a1d-dfa9-4354-8dda-3ab87162e045",
-      "code": "E06000036",
-      "name": "Bracknell Forest",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "745f8db6-e98f-4e5c-b6f4-e70157b67eee",
-      "code": "W06000013",
-      "name": "Bridgend",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "fd2aa9ec-7c2e-44a7-9baa-dfde6d8e1721",
-      "code": "E06000023",
-      "name": "Bristol, City of",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "d7fde2d1-9cdf-4d49-a245-7b6b73dc2ec3",
-      "code": "W06000018",
-      "name": "Caerphilly",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "fe41fe39-f6e7-4871-be54-c6b31f4fb17f",
-      "code": "W06000015",
-      "name": "Cardiff",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "0fc1ddc9-022d-4054-80c1-ddedb615dad8",
-      "code": "W06000010",
-      "name": "Carmarthenshire",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "404ee501-734d-492c-ae8c-d4aba9c0ac45",
-      "code": "E06000056",
-      "name": "Central Bedfordshire",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "aa588d6d-9466-4a2d-bf58-711ec19979a0",
-      "code": "E06000049",
-      "name": "Cheshire East",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "13769419-a193-4053-ab9b-c80c53bf47e5",
-      "code": "E06000050",
-      "name": "Cheshire West and Chester",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "1b5826f5-2ab3-41fb-9f74-d90952a1d84b",
-      "code": "W06000003",
-      "name": "Conwy",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "c4c44c55-9bdd-4cd5-8154-ffa69d6da088",
-      "code": "E06000052",
-      "name": "Cornwall",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "8693246b-85a6-4e42-bde6-2f6a6a6086cc",
-      "code": "E06000047",
-      "name": "County Durham",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "9a009858-fe4c-4984-9032-fc2aaae1ea00",
-      "code": "E06000005",
-      "name": "Darlington",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "ed7d77ff-50af-4f98-a017-2316b6588516",
-      "code": "W06000004",
-      "name": "Denbighshire",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "77ed123d-27f8-4f69-8c20-719170352253",
-      "code": "E06000015",
-      "name": "Derby",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "103409bf-3ca8-4d6a-98aa-298e2c2fcd31",
-      "code": "E06000011",
-      "name": "East Riding of Yorkshire",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "83726a7e-19bf-4125-a6ab-3a96fa06c4b0",
-      "code": "W06000005",
-      "name": "Flintshire",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "566a92c2-6432-498a-b29c-fdfc829908e0",
-      "code": "W06000002",
-      "name": "Gwynedd",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "80c94e62-6177-460a-b723-ea78d012d6e6",
-      "code": "E06000006",
-      "name": "Halton",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "90e677f0-a308-4cc9-8c53-5ea6967f64cf",
-      "code": "E06000001",
-      "name": "Hartlepool",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "e598f25f-d805-434f-bc73-e46182288d1c",
-      "code": "E06000019",
-      "name": "Herefordshire, County of",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "3d0466de-dccd-439a-8e82-9a6c276cbb78",
-      "code": "W06000001",
-      "name": "Isle of Anglesey",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "cf3d3dda-9168-4c1c-a541-ab24a8099aaa",
-      "code": "E06000046",
-      "name": "Isle of Wight",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "20a7ddfb-8e9c-4a4f-975b-3384423a2844",
-      "code": "E06000010",
-      "name": "Kingston upon Hull, City of",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "56e0a908-1818-41fb-939b-471348a30678",
-      "code": "E06000035",
-      "name": "Medway",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "d286ea1b-25e1-4934-9000-bd1d2c2b20de",
-      "code": "E06000002",
-      "name": "Middlesbrough",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "d5358606-b9c1-48f2-895e-f0f25de1b88c",
-      "code": "E06000042",
-      "name": "Milton Keynes",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "d349ac42-03fe-46cf-a6c6-1b3d6bad2030",
-      "code": "W06000021",
-      "name": "Monmouthshire",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "2ed89f29-f2bb-44c8-8127-0ee05c81a71a",
-      "code": "W06000012",
-      "name": "Neath Port Talbot",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "53411871-8962-4c97-bdf7-61b722eacf13",
-      "code": "W06000022",
-      "name": "Newport",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "77513c4c-83c9-460d-ac61-c187c6861ee4",
-      "code": "E06000012",
-      "name": "North East Lincolnshire",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "096bee0a-5e0a-4713-ac2b-e32986fcef95",
-      "code": "E06000013",
-      "name": "North Lincolnshire",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "729cd52a-fee8-4b88-adcd-1ff2c587ae7d",
-      "code": "E06000024",
-      "name": "North Somerset",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "efa62b56-84d7-448d-9f56-1fb30d1e2f2d",
-      "code": "E06000048",
-      "name": "Northumberland",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "dd9a1156-1e47-4251-b8be-8b5d2b320bff",
-      "code": "E06000018",
-      "name": "Nottingham",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "711bfed4-97f0-467d-9ce1-03f01988d37a",
-      "code": "W06000009",
-      "name": "Pembrokeshire",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "812c5810-1771-46e7-9033-0ff1cb9622ad",
-      "code": "E06000031",
-      "name": "Peterborough",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "b3e1478d-5f09-4702-99ee-61bcf2b1eeaf",
-      "code": "E06000026",
-      "name": "Plymouth",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "a3cfee7c-bb5f-491c-9d23-3544a0f2cf22",
-      "code": "E06000029",
-      "name": "Poole",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "82cec90d-edb9-4950-af70-fcdeb3f23c8a",
-      "code": "E06000044",
-      "name": "Portsmouth",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "ae3ba3b9-75d1-49b3-91af-f3e413885944",
-      "code": "W06000023",
-      "name": "Powys",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "7094e901-e75e-4fd9-aa93-9c455fdbfd67",
-      "code": "E06000003",
-      "name": "Redcar and Cleveland",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "33da5c5c-eba1-4f4b-b961-806362dfe104",
-      "code": "W06000016",
-      "name": "Rhondda Cynon Taf",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "94a55968-ab82-432c-b15b-f2c708d1ecde",
-      "code": "E06000017",
-      "name": "Rutland",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "4f598f7f-dd43-476e-8401-d251b609ca44",
-      "code": "E06000051",
-      "name": "Shropshire",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "bf3970b7-3028-418f-b6c6-ca8127fc7c09",
-      "code": "E06000025",
-      "name": "South Gloucestershire",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "257dadd8-999f-448f-8b63-c6e866b7d4e8",
-      "code": "E06000045",
-      "name": "Southampton",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "c0820ba5-22ec-431e-be78-2deb968b7063",
-      "code": "E06000004",
-      "name": "Stockton-on-Tees",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "1db2e947-06ca-4750-a23c-d9ccd05ea643",
-      "code": "E06000021",
-      "name": "Stoke-on-Trent",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "788b5f2d-767e-4e18-bfb7-70b09490bca6",
-      "code": "W06000011",
-      "name": "Swansea",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "5760afc5-1bd9-4225-9f3b-730984e8a699",
-      "code": "E06000030",
-      "name": "Swindon",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "883b9446-2c82-4c6d-9d2a-76f654b9bc59",
-      "code": "E06000020",
-      "name": "Telford and Wrekin",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "e55fa33b-6b08-4ddf-a2af-c1b100d528eb",
-      "code": "W06000014",
-      "name": "The Vale of Glamorgan",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "283a61cd-2866-43f6-a5d6-25ca34f4e234",
-      "code": "E06000027",
-      "name": "Torbay",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "f8fcfadb-8c56-4634-bbfe-cb4b07ebdf88",
-      "code": "E06000007",
-      "name": "Warrington",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "635c0ebd-7c1e-470f-ba51-66f4bd2966c5",
-      "code": "E06000037",
-      "name": "West Berkshire",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "60590df9-795c-471b-941c-7562fa11f672",
-      "code": "E06000054",
-      "name": "Wiltshire",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "cbab6766-7fa1-49b3-8196-9f1e96f94e9a",
-      "code": "E06000040",
-      "name": "Windsor and Maidenhead",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "44f3970c-2ef6-44fe-a01b-3ce5587c97c6",
-      "code": "E06000041",
-      "name": "Wokingham",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "1ff3872e-7870-4c58-828a-88cfee9aa57c",
-      "code": "W06000006",
-      "name": "Wrexham",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
-    },
-    {
-      "id": "67c06e00-fb7b-44c8-943d-b7e760767202",
-      "code": "E06000014",
-      "name": "York",
-      "levelType": {
-        "id": "UA",
-        "name": "Unitary Authority",
-        "level": 5
-      }
+      "code": "K02000001",
+      "name": "United Kingdom",
+      "levelType": {
+        "id": "UK",
+        "name": "United Kingdom",
+        "level": 0
+      },
+      "empty": true,
+      "options": [
+        {
+          "code": "K03000001",
+          "name": "Great Britain",
+          "levelType": {
+            "id": "GB",
+            "name": "Great Britain",
+            "level": 1
+          },
+          "empty": true,
+          "options": [
+            {
+              "id": "c2f76d61-faeb-4d6e-b54c-ba8346b3c376",
+              "code": "K04000001",
+              "name": "England and Wales",
+              "levelType": {
+                "id": "NAT",
+                "name": "England and Wales",
+                "level": 2
+              },
+              "options": [
+                {
+                  "id": "a6eb02bd-1b77-4379-b12d-d5f040fd4f04",
+                  "code": "E92000001",
+                  "name": "England",
+                  "levelType": {
+                    "id": "CTRY",
+                    "name": "Country",
+                    "level": 3
+                  },
+                  "options": [
+                    {
+                      "id": "b722c1dc-0b40-41db-b104-8ae0a97fe6bb",
+                      "code": "E12000004",
+                      "name": "East Midlands",
+                      "levelType": {
+                        "id": "RGN",
+                        "name": "Region",
+                        "level": 4
+                      },
+                      "options": [
+                        {
+                          "id": "2b0a08c8-a0b0-4976-83cf-8b17e0a6c1b9",
+                          "code": "E07000170",
+                          "name": "Ashfield",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "73bb447c-b75e-4d0a-8562-e27999ee519f",
+                          "code": "E07000171",
+                          "name": "Bassetlaw",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "33b3f368-0054-433e-aa51-db1e014c12d2",
+                          "code": "E07000172",
+                          "name": "Broxtowe",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "1e682263-d196-4ac3-b7bd-0e943e8547d5",
+                          "code": "E07000130",
+                          "name": "Charnwood",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "db37fe3b-96bf-4d92-a8d7-6ee7bbd30e40",
+                          "code": "E07000137",
+                          "name": "East Lindsey",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "d1f7f0eb-c39f-4d5b-886a-87a67f641ca5",
+                          "code": "E07000152",
+                          "name": "East Northamptonshire",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "56df32b2-b711-4ccf-bc43-22d8dd0c9c80",
+                          "code": "E07000036",
+                          "name": "Erewash",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "3d88e3b7-a2a7-4b10-8b01-b67061d83d0b",
+                          "code": "E07000138",
+                          "name": "Lincoln",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "0f85cc7f-a692-4229-90a1-e32ca0670983",
+                          "code": "E07000174",
+                          "name": "Mansfield",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "f853f86e-59e7-4255-ac82-5c3789e87f76",
+                          "code": "E07000133",
+                          "name": "Melton",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "265a1285-1718-428f-9f69-07ad6fbe5eff",
+                          "code": "E07000175",
+                          "name": "Newark and Sherwood",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "c35f0e8a-9ad0-4d64-8c1e-0023ab42e3a0",
+                          "code": "E07000139",
+                          "name": "North Kesteven",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "75fd43d6-4e54-499a-97c2-64423af684e5",
+                          "code": "E07000154",
+                          "name": "Northampton",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "04175f17-af8c-428e-b168-0f0304932377",
+                          "code": "E07000140",
+                          "name": "South Holland",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "0af38bdb-6a37-4619-9f4d-a3dfceaf0eac",
+                          "code": "E07000141",
+                          "name": "South Kesteven",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "b647e4a7-5769-4306-a603-0d917c507a86",
+                          "code": "E07000155",
+                          "name": "South Northamptonshire",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "04dd6449-1f0d-4e0b-9bf9-b893bc5b3229",
+                          "code": "E07000142",
+                          "name": "West Lindsey",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "77ed123d-27f8-4f69-8c20-719170352253",
+                          "code": "E06000015",
+                          "name": "Derby",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "dd9a1156-1e47-4251-b8be-8b5d2b320bff",
+                          "code": "E06000018",
+                          "name": "Nottingham",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "94a55968-ab82-432c-b15b-f2c708d1ecde",
+                          "code": "E06000017",
+                          "name": "Rutland",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "f8212fc8-79b7-476a-a279-5629f5ac66e0",
+                      "code": "E12000006",
+                      "name": "East of England",
+                      "levelType": {
+                        "id": "RGN",
+                        "name": "Region",
+                        "level": 4
+                      },
+                      "options": [
+                        {
+                          "id": "10de2bf2-11db-4d7e-86ff-e6898be7ca32",
+                          "code": "E07000200",
+                          "name": "Babergh",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "2d2b91e0-2518-44a5-837f-d61f33c26020",
+                          "code": "E07000143",
+                          "name": "Breckland",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "525a7bb5-4971-4a40-83ba-bace1318fdb8",
+                          "code": "E07000144",
+                          "name": "Broadland",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "8404f98e-8d05-4f53-a6d4-f5e5fcc6b457",
+                          "code": "E07000008",
+                          "name": "Cambridge",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "3373042a-30df-4f20-81cc-891d04fde6b8",
+                          "code": "E07000071",
+                          "name": "Colchester",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "828448e9-d49e-40a9-b0f2-d63b480de52f",
+                          "code": "E07000009",
+                          "name": "East Cambridgeshire",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "9f1bbf29-c9a6-4927-9532-695c98dbe608",
+                          "code": "E07000010",
+                          "name": "Fenland",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "919a8c9e-7811-4e14-a71c-61369c136241",
+                          "code": "E07000201",
+                          "name": "Forest Heath",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "d35dcbdc-fd9d-46fd-9928-25eb06abd1e8",
+                          "code": "E07000098",
+                          "name": "Hertsmere",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "9e62ef3d-d3cf-4068-b631-53e2d538b971",
+                          "code": "E07000011",
+                          "name": "Huntingdonshire",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "8b4e5880-affd-4ce6-948d-5e81b685ba18",
+                          "code": "E07000202",
+                          "name": "Ipswich",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "adb0e2c9-5f98-4b04-aa27-8832862504bc",
+                          "code": "E07000146",
+                          "name": "King's Lynn and West Norfolk",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "edb77821-1a71-42a0-9e80-9f4bffc3dc5b",
+                          "code": "E07000203",
+                          "name": "Mid Suffolk",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "96fea96c-5a69-4e51-ba84-a6e6fd99b16d",
+                          "code": "E07000147",
+                          "name": "North Norfolk",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "55aed834-6fd8-4c52-8c7a-14f702cae659",
+                          "code": "E07000148",
+                          "name": "Norwich",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "ebd63fb0-3c8b-4a48-93e1-b1d6eea22440",
+                          "code": "E07000012",
+                          "name": "South Cambridgeshire",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "bcc1f6ec-c393-43cc-9e8d-f62f19bad0f3",
+                          "code": "E07000149",
+                          "name": "South Norfolk",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "d635460f-34fe-4af2-a80a-4cec4aa327d4",
+                          "code": "E07000204",
+                          "name": "St Edmundsbury",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "74a37146-8df8-43f7-bd21-3b86b4120bf6",
+                          "code": "E07000205",
+                          "name": "Suffolk Coastal",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "be4277ca-d6ca-4603-83ff-9abf60845d05",
+                          "code": "E07000102",
+                          "name": "Three Rivers",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "8a6c3982-f684-4afb-8744-da9c175da88a",
+                          "code": "E07000077",
+                          "name": "Uttlesford",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "eb96f54d-f015-4c3b-93ee-aaa06bdafa89",
+                          "code": "E07000206",
+                          "name": "Waveney",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "404ee501-734d-492c-ae8c-d4aba9c0ac45",
+                          "code": "E06000056",
+                          "name": "Central Bedfordshire",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "812c5810-1771-46e7-9033-0ff1cb9622ad",
+                          "code": "E06000031",
+                          "name": "Peterborough",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "67cf2cf8-73a6-487b-b240-c01ff21ebbb1",
+                      "code": "E12000007",
+                      "name": "London",
+                      "levelType": {
+                        "id": "RGN",
+                        "name": "Region",
+                        "level": 4
+                      },
+                      "options": [
+                        {
+                          "id": "91beafd1-0665-4ef5-bfbc-138a077b72ab",
+                          "code": "E09000006",
+                          "name": "Bromley",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "740d8d3a-a379-4853-a55e-78b476e6edd1",
+                          "code": "E09000007",
+                          "name": "Camden",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "7c2a6119-08a3-4e0c-a49b-ec9c2a21d994",
+                          "code": "E09000008",
+                          "name": "Croydon",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "737e157f-764b-4dc9-9c88-a53a97ee4c94",
+                          "code": "E09000011",
+                          "name": "Greenwich",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "70414a70-f829-43ac-aa6a-642dcfcc9896",
+                          "code": "E09000013",
+                          "name": "Hammersmith and Fulham",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "0d112da3-1a71-4fdb-af07-e79529604fa9",
+                          "code": "E09000015",
+                          "name": "Harrow",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "6c4a3d1d-2e2c-4b3b-bb1f-bd10db787d71",
+                          "code": "E09000017",
+                          "name": "Hillingdon",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "c119b66c-68df-4948-80b8-a2f3c81aef18",
+                          "code": "E09000018",
+                          "name": "Hounslow",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "e6564397-3072-40a3-a2ed-f4747c875e69",
+                          "code": "E09000021",
+                          "name": "Kingston upon Thames",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "77656223-283a-4a7b-9ad8-6b6d40b6ae6b",
+                          "code": "E09000022",
+                          "name": "Lambeth",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "91cf2e59-79bc-4a2a-9be4-2abdb98131af",
+                          "code": "E09000027",
+                          "name": "Richmond upon Thames",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "ddeb3277-c478-44e6-b5ab-f1484884948d",
+                          "code": "E09000030",
+                          "name": "Tower Hamlets",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "b47ddaf7-29eb-49aa-8e93-390f64bf9c0f",
+                          "code": "E09000032",
+                          "name": "Wandsworth",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "269edafd-43cd-4be7-ad53-905175af5edd",
+                          "code": "E09000033",
+                          "name": "Westminster",
+                          "levelType": {
+                            "id": "LONB",
+                            "name": "London Borough ",
+                            "level": 5
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "35db376a-a8ae-4b81-86f6-195228e7af31",
+                      "code": "E12000001",
+                      "name": "North East",
+                      "levelType": {
+                        "id": "RGN",
+                        "name": "Region",
+                        "level": 4
+                      },
+                      "options": [
+                        {
+                          "id": "160aad07-086f-4762-9837-8426626ba9c1",
+                          "code": "E08000020",
+                          "name": "Gateshead",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "b7739033-0e36-42d5-92aa-80eac329aec6",
+                          "code": "E08000021",
+                          "name": "Newcastle upon Tyne",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "ad26be84-f4dc-46b1-acd9-acb22fb06cd1",
+                          "code": "E08000022",
+                          "name": "North Tyneside",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "feab1367-2d52-49bd-bcd4-73946bcf6adf",
+                          "code": "E08000023",
+                          "name": "South Tyneside",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "6faa8c41-448c-48f1-aa80-0ff9b82a3287",
+                          "code": "E08000024",
+                          "name": "Sunderland",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "8693246b-85a6-4e42-bde6-2f6a6a6086cc",
+                          "code": "E06000047",
+                          "name": "County Durham",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "9a009858-fe4c-4984-9032-fc2aaae1ea00",
+                          "code": "E06000005",
+                          "name": "Darlington",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "90e677f0-a308-4cc9-8c53-5ea6967f64cf",
+                          "code": "E06000001",
+                          "name": "Hartlepool",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "d286ea1b-25e1-4934-9000-bd1d2c2b20de",
+                          "code": "E06000002",
+                          "name": "Middlesbrough",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "efa62b56-84d7-448d-9f56-1fb30d1e2f2d",
+                          "code": "E06000048",
+                          "name": "Northumberland",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "7094e901-e75e-4fd9-aa93-9c455fdbfd67",
+                          "code": "E06000003",
+                          "name": "Redcar and Cleveland",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "c0820ba5-22ec-431e-be78-2deb968b7063",
+                          "code": "E06000004",
+                          "name": "Stockton-on-Tees",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "d22e76f8-47d8-4dbf-8594-424d0d7e128e",
+                      "code": "E12000002",
+                      "name": "North West",
+                      "levelType": {
+                        "id": "RGN",
+                        "name": "Region",
+                        "level": 4
+                      },
+                      "options": [
+                        {
+                          "id": "5eb54adc-e2da-4997-82da-9f179d2ad1dd",
+                          "code": "E08000001",
+                          "name": "Bolton",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "392ff387-51e0-43d0-bd5e-51742631088c",
+                          "code": "E08000002",
+                          "name": "Bury",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "2e06d70a-d960-4446-a719-6e16ad0edad7",
+                          "code": "E08000011",
+                          "name": "Knowsley",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "d248add4-520f-4ad2-986a-84d477c1cedb",
+                          "code": "E08000012",
+                          "name": "Liverpool",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "ca3b471a-9116-4a0c-b959-2badfb56e423",
+                          "code": "E08000003",
+                          "name": "Manchester",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "5258e1eb-751f-4702-8411-665a6cb39ca4",
+                          "code": "E08000004",
+                          "name": "Oldham",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "0666eb8a-eca8-4847-8e4b-962364903e57",
+                          "code": "E08000005",
+                          "name": "Rochdale",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "95cda5f5-f651-47b3-bdbf-dcf6b21bde74",
+                          "code": "E08000006",
+                          "name": "Salford",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "1e1388be-83dd-4351-8b43-daf1327051d0",
+                          "code": "E08000014",
+                          "name": "Sefton",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "4724e3e4-3405-4271-aef5-7955b114d9b8",
+                          "code": "E08000013",
+                          "name": "St. Helens",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "202f94de-c3d4-43b1-89fd-17930ddeda6d",
+                          "code": "E08000007",
+                          "name": "Stockport",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "c5b19a1c-fa5e-4b23-b7ab-553a3ee0bf1c",
+                          "code": "E08000008",
+                          "name": "Tameside",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "1c1fdb8b-5d97-47fc-9ca3-c1f5cb2cd2cb",
+                          "code": "E08000009",
+                          "name": "Trafford",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "a03bfae7-3c69-4094-92b1-e2babf747501",
+                          "code": "E08000010",
+                          "name": "Wigan",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "b4085d8a-b027-4427-ad77-0fbbb7045cf3",
+                          "code": "E08000015",
+                          "name": "Wirral",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "1c2ac78e-04c9-4d1d-8a39-c819ebce23eb",
+                          "code": "E07000026",
+                          "name": "Allerdale",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "6475b808-9604-4d5b-bb4f-5b5d864b98a4",
+                          "code": "E07000027",
+                          "name": "Barrow-in-Furness",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "a037a588-5d40-4a24-84ab-7bd23d61a203",
+                          "code": "E07000028",
+                          "name": "Carlisle",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "016d51b0-dfe3-4fc3-b7e6-80ce8eba42f9",
+                          "code": "E07000119",
+                          "name": "Fylde",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "95076bce-5c12-4b22-9bc2-6166a3c93ee2",
+                          "code": "E07000121",
+                          "name": "Lancaster",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "d12ef2e4-65fd-4bb6-9b9a-4663daaaa740",
+                          "code": "E07000123",
+                          "name": "Preston",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "1dc0274e-9c0d-4f64-a515-04f095ddb378",
+                          "code": "E06000009",
+                          "name": "Blackpool",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "aa588d6d-9466-4a2d-bf58-711ec19979a0",
+                          "code": "E06000049",
+                          "name": "Cheshire East",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "13769419-a193-4053-ab9b-c80c53bf47e5",
+                          "code": "E06000050",
+                          "name": "Cheshire West and Chester",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "80c94e62-6177-460a-b723-ea78d012d6e6",
+                          "code": "E06000006",
+                          "name": "Halton",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "f8fcfadb-8c56-4634-bbfe-cb4b07ebdf88",
+                          "code": "E06000007",
+                          "name": "Warrington",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "a5309ba1-f310-437c-8c71-e13459b5acbc",
+                      "code": "E12000008",
+                      "name": "South East",
+                      "levelType": {
+                        "id": "RGN",
+                        "name": "Region",
+                        "level": 4
+                      },
+                      "options": [
+                        {
+                          "id": "89ef2891-f0b8-4b11-bb46-17b4dda4177d",
+                          "code": "E07000224",
+                          "name": "Arun",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "decb170a-3ae3-4adb-92c5-ea52e3ffab3a",
+                          "code": "E07000105",
+                          "name": "Ashford",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "008fd818-accb-4d39-a227-747a6a2ddb67",
+                          "code": "E07000004",
+                          "name": "Aylesbury Vale",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "8602ac03-a748-4d72-a5f1-e59fe31fbfb6",
+                          "code": "E07000084",
+                          "name": "Basingstoke and Deane",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "8fcce061-84c0-4ced-89d1-9ca3332c0f01",
+                          "code": "E07000106",
+                          "name": "Canterbury",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "6f5e45e7-cddd-4436-90e0-f2a60ab74c97",
+                          "code": "E07000177",
+                          "name": "Cherwell",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "16a3a7e0-1d87-4117-8288-bc94100190c8",
+                          "code": "E07000225",
+                          "name": "Chichester",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "4ea4adfb-2547-4c8f-86d9-968c902d5a30",
+                          "code": "E07000108",
+                          "name": "Dover",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "0119431b-5d4e-4049-8ed5-b5b6522bfb60",
+                          "code": "E07000085",
+                          "name": "East Hampshire",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "4bcf7dd0-c165-490a-b815-164423aa4bdc",
+                          "code": "E07000086",
+                          "name": "Eastleigh",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "52d4f892-7ef1-4a7c-a5c9-9fb04ace8aca",
+                          "code": "E07000087",
+                          "name": "Fareham",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "09a002a7-467b-446c-9f54-4828064e7d5f",
+                          "code": "E07000088",
+                          "name": "Gosport",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "068577dd-d0bb-4505-83b9-bb98579f9dba",
+                          "code": "E07000209",
+                          "name": "Guildford",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "4fd18b43-915e-4081-b6c4-06aa656dafc3",
+                          "code": "E07000089",
+                          "name": "Hart",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "07c2a497-94a3-4ca2-baa8-e90c4b8fe17a",
+                          "code": "E07000090",
+                          "name": "Havant",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "cf0eae6d-427d-4263-8ae6-bae935416857",
+                          "code": "E07000110",
+                          "name": "Maidstone",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "26789055-7f8d-44db-94f4-e4c461bf0315",
+                          "code": "E07000091",
+                          "name": "New Forest",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "57ecf305-df86-4f01-910a-e6e467960d12",
+                          "code": "E07000178",
+                          "name": "Oxford",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "8d68bebb-6dea-487d-bc11-2b8a1e8226f8",
+                          "code": "E07000092",
+                          "name": "Rushmoor",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "468869df-c605-415c-8bb8-2a59cf780e27",
+                          "code": "E07000112",
+                          "name": "Shepway",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "a931ea98-d0fe-40f0-af9a-9cb14d84c9c7",
+                          "code": "E07000006",
+                          "name": "South Bucks",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "06163ee3-2cec-49cf-9320-24f04fe71d31",
+                          "code": "E07000179",
+                          "name": "South Oxfordshire",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "2e0ec772-89eb-4245-97cc-31c43973ddf0",
+                          "code": "E07000214",
+                          "name": "Surrey Heath",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "bfad09e3-9c1f-49c6-9450-e6da13377a5d",
+                          "code": "E07000093",
+                          "name": "Test Valley",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "e7b65b32-8161-4da7-8ae8-4606fa1baced",
+                          "code": "E07000114",
+                          "name": "Thanet",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "d1f6f108-8bef-4cac-833b-a6fa9bae7879",
+                          "code": "E07000180",
+                          "name": "Vale of White Horse",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "111de45e-b6e3-41c3-b43d-52a30f8775ba",
+                          "code": "E07000216",
+                          "name": "Waverley",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "466c9eb9-c002-416e-b7f7-779a098e67bd",
+                          "code": "E07000181",
+                          "name": "West Oxfordshire",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "8af26c40-2457-419b-a2ef-b88204364a22",
+                          "code": "E07000094",
+                          "name": "Winchester",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "5a5e2ea4-e60c-47ff-abdf-8e0af3167f2c",
+                          "code": "E07000217",
+                          "name": "Woking",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "14d6b16e-bf8a-4283-8fff-b712778da83c",
+                          "code": "E07000007",
+                          "name": "Wycombe",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "41554a1d-dfa9-4354-8dda-3ab87162e045",
+                          "code": "E06000036",
+                          "name": "Bracknell Forest",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "cf3d3dda-9168-4c1c-a541-ab24a8099aaa",
+                          "code": "E06000046",
+                          "name": "Isle of Wight",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "56e0a908-1818-41fb-939b-471348a30678",
+                          "code": "E06000035",
+                          "name": "Medway",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "d5358606-b9c1-48f2-895e-f0f25de1b88c",
+                          "code": "E06000042",
+                          "name": "Milton Keynes",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "82cec90d-edb9-4950-af70-fcdeb3f23c8a",
+                          "code": "E06000044",
+                          "name": "Portsmouth",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "257dadd8-999f-448f-8b63-c6e866b7d4e8",
+                          "code": "E06000045",
+                          "name": "Southampton",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "635c0ebd-7c1e-470f-ba51-66f4bd2966c5",
+                          "code": "E06000037",
+                          "name": "West Berkshire",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "cbab6766-7fa1-49b3-8196-9f1e96f94e9a",
+                          "code": "E06000040",
+                          "name": "Windsor and Maidenhead",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "44f3970c-2ef6-44fe-a01b-3ce5587c97c6",
+                          "code": "E06000041",
+                          "name": "Wokingham",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "e6e44c53-a98b-41ee-bd56-647a610d5664",
+                      "code": "E12000009",
+                      "name": "South West",
+                      "levelType": {
+                        "id": "RGN",
+                        "name": "Region",
+                        "level": 4
+                      },
+                      "options": [
+                        {
+                          "id": "618a21db-cd39-4bb4-97a4-1c37ee4342f8",
+                          "code": "E07000078",
+                          "name": "Cheltenham",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "ea517450-cb12-4a9b-9124-58e5c7d93d3b",
+                          "code": "E07000079",
+                          "name": "Cotswold",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "b63d437c-f944-49c4-aeae-e0160433345a",
+                          "code": "E07000040",
+                          "name": "East Devon",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "8d22965f-2dc7-4f81-9d74-18c80f9ec049",
+                          "code": "E07000049",
+                          "name": "East Dorset",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "77decc46-b929-458b-a9f4-6664f1575a9e",
+                          "code": "E07000041",
+                          "name": "Exeter",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "52a49a1b-4eac-4480-9fcf-e31cc2cb4c6f",
+                          "code": "E07000080",
+                          "name": "Forest of Dean",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "1a2e5183-f54a-4860-a841-4dde9337ba26",
+                          "code": "E07000081",
+                          "name": "Gloucester",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "ca1cb505-060e-4736-8a28-b56df7349e37",
+                          "code": "E07000187",
+                          "name": "Mendip",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "735c91dc-e1c1-47c7-8bda-6cfdb55e567a",
+                          "code": "E07000042",
+                          "name": "Mid Devon",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "fb8b30fa-e86a-4553-8aa6-8913c1af3fd4",
+                          "code": "E07000043",
+                          "name": "North Devon",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "42282073-1157-4cea-bd15-2638806db385",
+                          "code": "E07000050",
+                          "name": "North Dorset",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "00adbabc-afdd-40f6-b682-1edbf5185839",
+                          "code": "E07000051",
+                          "name": "Purbeck",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "de93010c-c3d9-44f3-8ce1-f354c7ab46b9",
+                          "code": "E07000188",
+                          "name": "Sedgemoor",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "47810962-bbcf-437d-9a3d-da58be4b5e25",
+                          "code": "E07000044",
+                          "name": "South Hams",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "24d1801e-f391-456c-bf07-e4e2cc30465b",
+                          "code": "E07000189",
+                          "name": "South Somerset",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "dd255d53-941f-4864-b26b-b3216d1658ee",
+                          "code": "E07000082",
+                          "name": "Stroud",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "3abf6c91-7336-43f6-a158-fe5969a0b88a",
+                          "code": "E07000190",
+                          "name": "Taunton Deane",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "45288450-cb10-4853-83cc-c9dc2c921168",
+                          "code": "E07000045",
+                          "name": "Teignbridge",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "6b3fb8b1-da65-4af6-9ad2-f789d0e0583c",
+                          "code": "E07000083",
+                          "name": "Tewkesbury",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "7993e42f-655b-4e89-ac26-a51702562b9b",
+                          "code": "E07000047",
+                          "name": "West Devon",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "8758d224-38f7-4de2-9661-d4640b98a29b",
+                          "code": "E07000052",
+                          "name": "West Dorset",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "057cf86d-ed1b-4c60-b5bd-132af29e216f",
+                          "code": "E07000053",
+                          "name": "Weymouth and Portland",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "e9b4bee1-717c-4ac8-a9d0-4f6a4f8d0c16",
+                          "code": "E06000022",
+                          "name": "Bath and North East Somerset",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "f123dfe6-fa0d-4921-8f95-1b0c323ffba4",
+                          "code": "E06000028",
+                          "name": "Bournemouth",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "fd2aa9ec-7c2e-44a7-9baa-dfde6d8e1721",
+                          "code": "E06000023",
+                          "name": "Bristol, City of",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "c4c44c55-9bdd-4cd5-8154-ffa69d6da088",
+                          "code": "E06000052",
+                          "name": "Cornwall",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "729cd52a-fee8-4b88-adcd-1ff2c587ae7d",
+                          "code": "E06000024",
+                          "name": "North Somerset",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "b3e1478d-5f09-4702-99ee-61bcf2b1eeaf",
+                          "code": "E06000026",
+                          "name": "Plymouth",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "a3cfee7c-bb5f-491c-9d23-3544a0f2cf22",
+                          "code": "E06000029",
+                          "name": "Poole",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "bf3970b7-3028-418f-b6c6-ca8127fc7c09",
+                          "code": "E06000025",
+                          "name": "South Gloucestershire",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "5760afc5-1bd9-4225-9f3b-730984e8a699",
+                          "code": "E06000030",
+                          "name": "Swindon",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "283a61cd-2866-43f6-a5d6-25ca34f4e234",
+                          "code": "E06000027",
+                          "name": "Torbay",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "60590df9-795c-471b-941c-7562fa11f672",
+                          "code": "E06000054",
+                          "name": "Wiltshire",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "19912bf3-2aab-4a45-bbaf-f006234f14ba",
+                      "code": "E12000005",
+                      "name": "West Midlands",
+                      "levelType": {
+                        "id": "RGN",
+                        "name": "Region",
+                        "level": 4
+                      },
+                      "options": [
+                        {
+                          "id": "88fb02b6-d4b7-4306-a345-ce230b965f2d",
+                          "code": "E08000025",
+                          "name": "Birmingham",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "c17a30fe-b1a2-44c6-8145-aa7dfe449989",
+                          "code": "E08000026",
+                          "name": "Coventry",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "bb928a1c-0757-4881-8503-cd006615cef8",
+                          "code": "E08000027",
+                          "name": "Dudley",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "b37a91e7-f61b-405a-8050-4dbd423d8017",
+                          "code": "E08000028",
+                          "name": "Sandwell",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "140260de-7f04-4337-b2ba-9a68b87c3e52",
+                          "code": "E08000029",
+                          "name": "Solihull",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "a688309b-1a26-41c2-aadb-77910f4c679b",
+                          "code": "E08000030",
+                          "name": "Walsall",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "9d905ff4-b97c-451f-a819-121edfef7aaf",
+                          "code": "E08000031",
+                          "name": "Wolverhampton",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "05d842b6-f779-4cf3-a2e8-be95009bcfd0",
+                          "code": "E07000194",
+                          "name": "Lichfield",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "a22fcce0-772b-4cfb-90ac-001aa4c4e517",
+                          "code": "E07000195",
+                          "name": "Newcastle-under-Lyme",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "37e8066d-7c97-46b2-84f2-9e666416b2d1",
+                          "code": "E07000219",
+                          "name": "Nuneaton and Bedworth",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "6261cc19-09e8-422e-a857-6427f7f90919",
+                          "code": "E07000220",
+                          "name": "Rugby",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "635b271c-9f49-4748-9328-0cc555febfc9",
+                          "code": "E07000197",
+                          "name": "Stafford",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "ab3e297b-bf5e-4481-98a3-57731a6c7f02",
+                          "code": "E07000221",
+                          "name": "Stratford-on-Avon",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "aa19dfd9-6ab1-4e8e-a14a-a22961574d3b",
+                          "code": "E07000238",
+                          "name": "Wychavon",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "e598f25f-d805-434f-bc73-e46182288d1c",
+                          "code": "E06000019",
+                          "name": "Herefordshire, County of",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "4f598f7f-dd43-476e-8401-d251b609ca44",
+                          "code": "E06000051",
+                          "name": "Shropshire",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "1db2e947-06ca-4750-a23c-d9ccd05ea643",
+                          "code": "E06000021",
+                          "name": "Stoke-on-Trent",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "883b9446-2c82-4c6d-9d2a-76f654b9bc59",
+                          "code": "E06000020",
+                          "name": "Telford and Wrekin",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "be863d4d-fe5c-4791-b7db-26d52ebd51e6",
+                      "code": "E12000003",
+                      "name": "Yorkshire and The Humber",
+                      "levelType": {
+                        "id": "RGN",
+                        "name": "Region",
+                        "level": 4
+                      },
+                      "options": [
+                        {
+                          "id": "6e6a5b69-9480-41b2-bbc1-437b99d49cfd",
+                          "code": "E08000016",
+                          "name": "Barnsley",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "1a76b007-ea18-4ab4-985e-08ef3c86aad5",
+                          "code": "E08000032",
+                          "name": "Bradford",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "0771b06a-1e8d-4156-8ec6-238860009904",
+                          "code": "E08000033",
+                          "name": "Calderdale",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "c0cf3174-1433-49dd-8669-64ff675d4d98",
+                          "code": "E08000017",
+                          "name": "Doncaster",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "0d20061d-281a-4600-a64a-1df50b2fba81",
+                          "code": "E08000034",
+                          "name": "Kirklees",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "c5d15838-2cda-48ed-8e7f-e890e7c3e292",
+                          "code": "E08000035",
+                          "name": "Leeds",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "ddb8b3b5-b1ac-4247-906e-594f9f0af830",
+                          "code": "E08000018",
+                          "name": "Rotherham",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "869722e4-30a2-4835-a27b-b4df0fb6ed26",
+                          "code": "E08000019",
+                          "name": "Sheffield",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "2631c658-f82b-4d01-83d5-a7caf6685cb6",
+                          "code": "E08000036",
+                          "name": "Wakefield",
+                          "levelType": {
+                            "id": "MD",
+                            "name": "Metropolitan District ",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "33baf179-6d36-4cfb-be3f-e94f0d505461",
+                          "code": "E07000164",
+                          "name": "Hambleton",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "ebfbfea8-2db5-4abc-8097-1c86b0e560ef",
+                          "code": "E07000165",
+                          "name": "Harrogate",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "b952fdd6-3c8c-4838-8329-dfdd96699f5d",
+                          "code": "E07000166",
+                          "name": "Richmondshire",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "4b59b605-2046-4701-914f-9fb88b118801",
+                          "code": "E07000168",
+                          "name": "Scarborough",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "7bba6c67-4040-4a3f-ab61-483d1c55995f",
+                          "code": "E07000169",
+                          "name": "Selby",
+                          "levelType": {
+                            "id": "NMD",
+                            "name": "Non-metropolitan District",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "103409bf-3ca8-4d6a-98aa-298e2c2fcd31",
+                          "code": "E06000011",
+                          "name": "East Riding of Yorkshire",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "20a7ddfb-8e9c-4a4f-975b-3384423a2844",
+                          "code": "E06000010",
+                          "name": "Kingston upon Hull, City of",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "77513c4c-83c9-460d-ac61-c187c6861ee4",
+                          "code": "E06000012",
+                          "name": "North East Lincolnshire",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "096bee0a-5e0a-4713-ac2b-e32986fcef95",
+                          "code": "E06000013",
+                          "name": "North Lincolnshire",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        },
+                        {
+                          "id": "67c06e00-fb7b-44c8-943d-b7e760767202",
+                          "code": "E06000014",
+                          "name": "York",
+                          "levelType": {
+                            "id": "UA",
+                            "name": "Unitary Authority",
+                            "level": 5
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "28f6cdd1-a281-45e3-b028-225583dc30ac",
+                  "code": "W92000004",
+                  "name": "Wales",
+                  "levelType": {
+                    "id": "CTRY",
+                    "name": "Country",
+                    "level": 3
+                  },
+                  "options": [
+                    {
+                      "id": "745f8db6-e98f-4e5c-b6f4-e70157b67eee",
+                      "code": "W06000013",
+                      "name": "Bridgend",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "d7fde2d1-9cdf-4d49-a245-7b6b73dc2ec3",
+                      "code": "W06000018",
+                      "name": "Caerphilly",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "fe41fe39-f6e7-4871-be54-c6b31f4fb17f",
+                      "code": "W06000015",
+                      "name": "Cardiff",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "0fc1ddc9-022d-4054-80c1-ddedb615dad8",
+                      "code": "W06000010",
+                      "name": "Carmarthenshire",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "1b5826f5-2ab3-41fb-9f74-d90952a1d84b",
+                      "code": "W06000003",
+                      "name": "Conwy",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "ed7d77ff-50af-4f98-a017-2316b6588516",
+                      "code": "W06000004",
+                      "name": "Denbighshire",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "83726a7e-19bf-4125-a6ab-3a96fa06c4b0",
+                      "code": "W06000005",
+                      "name": "Flintshire",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "566a92c2-6432-498a-b29c-fdfc829908e0",
+                      "code": "W06000002",
+                      "name": "Gwynedd",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "3d0466de-dccd-439a-8e82-9a6c276cbb78",
+                      "code": "W06000001",
+                      "name": "Isle of Anglesey",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "d349ac42-03fe-46cf-a6c6-1b3d6bad2030",
+                      "code": "W06000021",
+                      "name": "Monmouthshire",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "2ed89f29-f2bb-44c8-8127-0ee05c81a71a",
+                      "code": "W06000012",
+                      "name": "Neath Port Talbot",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "53411871-8962-4c97-bdf7-61b722eacf13",
+                      "code": "W06000022",
+                      "name": "Newport",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "711bfed4-97f0-467d-9ce1-03f01988d37a",
+                      "code": "W06000009",
+                      "name": "Pembrokeshire",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "ae3ba3b9-75d1-49b3-91af-f3e413885944",
+                      "code": "W06000023",
+                      "name": "Powys",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "33da5c5c-eba1-4f4b-b961-806362dfe104",
+                      "code": "W06000016",
+                      "name": "Rhondda Cynon Taf",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "788b5f2d-767e-4e18-bfb7-70b09490bca6",
+                      "code": "W06000011",
+                      "name": "Swansea",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "e55fa33b-6b08-4ddf-a2af-c1b100d528eb",
+                      "code": "W06000014",
+                      "name": "The Vale of Glamorgan",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    },
+                    {
+                      "id": "1ff3872e-7870-4c58-828a-88cfee9aa57c",
+                      "code": "W06000006",
+                      "name": "Wrexham",
+                      "levelType": {
+                        "id": "UA",
+                        "name": "Unitary Authority",
+                        "level": 5
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
