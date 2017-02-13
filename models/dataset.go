@@ -149,6 +149,7 @@ type Hierarchy struct {
 }
 
 type HierarchyEntry struct {
+	ID        string              `json:"id"`
 	Code      string              `json:"code"`
 	Name      string              `json:"name"`
 	LevelType *HierarchyLevelType `json:"levelType,omitempty"`
