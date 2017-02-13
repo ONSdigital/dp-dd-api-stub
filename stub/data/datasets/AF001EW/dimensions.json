@@ -1,68 +1,35 @@
 [
   {
-    "id": "D000125",
-    "name": "Sex",
-    "type": "standard",
-    "url": "http://localhost:20099/datasets/AF001EW/dimensions/D000125",
-    "hierarchical": false,
-    "options": [
-      {
-        "id": "DO000153",
-        "name": "Male"
-      },
-      {
-        "id": "DO000154",
-        "name": "Female"
-      }
-    ]
-  },
-  {
-    "id": "D000124",
-    "name": "Residence Type",
-    "type": "standard",
-    "url": "http://localhost:20099/datasets/AF001EW/dimensions/D000124",
-    "hierarchical": false,
-    "options": [
-      {
-        "id": "DO000161",
-        "name": "All categories: Residence Type"
-      },
-      {
-        "id": "DO000162",
-        "name": "Lives in a household"
-      },
-      {
-        "id": "DO000163",
-        "name": "Lives in a communal establishment"
-      }
-    ]
-  },
-  {
-    "id": "D000123",
+    "id": "Age",
     "name": "Age",
+    "url": "http://localhost:20099/datasets/7d227be0-92c3-4c72-90b7-59a58c8f1539/dimensions/Age",
     "type": "standard",
-    "url": "http://localhost:20099/datasets/AF001EW/dimensions/D000123",
     "hierarchical": false,
     "options": [
       {
-        "id": "DO000265",
-        "name": "All categories: Age 16 and over"
-      },
-      {
-        "id": "DO000266",
+        "id": "d34423ca-e354-4db7-a039-bfa5673c57c8",
+        "code": "Age 16 to 24",
         "name": "Age 16 to 24"
       },
       {
-        "id": "DO000267",
+        "id": "b7b3ef5d-b2cb-469f-b9b0-1cc5c9cbf780",
+        "code": "Age 25 to 34",
         "name": "Age 25 to 34"
       },
       {
-        "id": "DO000268",
+        "id": "ef639dd0-cc09-49cd-b71b-b88c9c075116",
+        "code": "Age 35 to 49",
         "name": "Age 35 to 49"
       },
       {
-        "id": "DO000269",
+        "id": "f46c0465-3181-41fd-b355-aaade23b7d61",
+        "code": "Age 50 and over",
         "name": "Age 50 and over"
+      },
+      {
+        "id": "b0cbb13c-e22a-4060-ac0f-88cc150ade9e",
+        "code": "All categories: Age 16 and over",
+        "name": "All categories: Age 16 and over"
       }
     ]
   },
@@ -2432,6 +2399,54 @@
           "name": "Unitary Authority",
           "level": 5
         }
+      }
+    ]
+  },
+  {
+    "id": "Residence Type",
+    "name": "Residence Type",
+    "url": "http://localhost:20099/datasets/7d227be0-92c3-4c72-90b7-59a58c8f1539/dimensions/Residence%20Type",
+    "type": "standard",
+    "hierarchical": false,
+    "options": [
+      {
+        "id": "3b17ae82-18ab-4181-8733-4fc9a2c25e34",
+        "code": "All categories: Residence Type",
+        "name": "All categories: Residence Type"
+      },
+      {
+        "id": "0175aa55-5539-418e-8c04-1b37d15b3646",
+        "code": "Lives in a communal establishment",
+        "name": "Lives in a communal establishment"
+      },
+      {
+        "id": "9d5f274e-6827-4e90-adfb-91011c117b4b",
+        "code": "Lives in a household",
+        "name": "Lives in a household"
+      }
+    ]
+  },
+  {
+    "id": "Sex",
+    "name": "Sex",
+    "url": "http://localhost:20099/datasets/7d227be0-92c3-4c72-90b7-59a58c8f1539/dimensions/Sex",
+    "type": "standard",
+    "hierarchical": false,
+    "options": [
+      {
+        "id": "c8eda183-18bf-4e69-bf7b-893e76e93da9",
+        "code": "All categories: Sex",
+        "name": "All categories: Sex"
+      },
+      {
+        "id": "c7259a74-4a9f-4514-87a9-dd6d534f8ecf",
+        "code": "Females",
+        "name": "Females"
+      },
+      {
+        "id": "9766feec-66cc-4f82-ad8a-78c6de23f6b8",
+        "code": "Males",
+        "name": "Males"
       }
     ]
   }
