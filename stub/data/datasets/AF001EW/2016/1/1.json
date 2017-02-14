@@ -2,7 +2,7 @@
   "id": "AF001EWE2016V1",
   "datasetId": "AF001EW",
   "title": "AF001EW  Members of the Armed Forces by residence type by sex by age",
-  "url": "http://localhost:20099/datasets/AF001EW/edition/2016/version/1",
+  "url": "http://localhost:20099/datasets/AF001EW/editions/2016/versions/1",
   "edition": "2016",
   "version": "1",
   "metadata": {
@@ -28,28 +28,28 @@
       "id": "D000125",
       "name": "Sex",
       "type": "standard",
-      "url": "http://localhost:20099//dataset/AF001EW/edition/2016/version/1/dimension/D000125",
+      "url": "http://localhost:20099//datasets/AF001EW/editions/2016/versions/1/dimensions/D000125",
       "hierarchical": false
     },
     {
       "id": "D000124",
       "name": "Residence Type",
       "type": "standard",
-      "url": "http://localhost:20099//dataset/AF001EW/edition/2016/version/1/dimension/D000124",
+      "url": "http://localhost:20099//datasets/AF001EW/editions/2016/versions/1/dimensions/D000124",
       "hierarchical": false
     },
     {
       "id": "D000123",
       "name": "Age",
       "type": "standard",
-      "url": "http://localhost:20099//dataset/AF001EW/edition/2016/version/1/dimension/D000123",
+      "url": "http://localhost:20099//datasets/AF001EW/editions/2016/versions/1/dimensions/D000123",
       "hierarchical": false
     },
     {
       "id": "D000126",
       "name": "2011 Statistical Geography Hierarchy",
       "type": "geography",
-      "url": "http://localhost:20099//dataset/AF001EW/edition/2016/version/1/dimension/D000126",
+      "url": "http://localhost:20099//datasets/AF001EW/editions/2016/versions/1/dimensions/D000126",
       "hierarchical": true
     }
   ]

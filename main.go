@@ -23,6 +23,7 @@ import (
 	"github.com/ONSdigital/go-ns/log"
 	"github.com/gorilla/pat"
 	"github.com/justinas/alice"
+	"github.com/ONSdigital/dp-dd-api-stub/handlers/data"
 )
 
 func main() {
@@ -55,7 +56,13 @@ func main() {
 	*/
 
 	// this is to replace the legacy /datasets/{datasetId}
-	router.Get("/datasets/version/{uuid}", dataset.LegacyHandler)
+	router.Get("/versions/{datasetId}/dimensions/{dimensionId}", dimension.LegacyHandler) // using datasetId as this uses shared code with new v3 version
+	router.Get("/versions/{uuid}/dimensions", dimensions.LegacyHandler)
+	router.Get("/versions/{uuid}/data", data.Handler)
+	router.Get("/versions/{uuid}", dataset.LegacyHandler)
+	router.Get("/versions", datasets.LegacyHandler)
+
+
 	router.Get("/datasets/{datasetId}/editions/{edition}/versions/{version}/dimensions/{dimensionID}", dimension.Handler) // single dimension
 	router.Get("/datasets/{datasetId}/editions/{edition}/versions/{version}/dimensions", dimensions.Handler) // provides the dimensions for the given version
 	router.Get("/datasets/{datasetId}/editions/{edition}/versions/{version}", dataset.Handler) // provides the dataset information for the given version

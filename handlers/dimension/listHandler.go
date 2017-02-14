@@ -26,3 +26,21 @@ func listHandler(w http.ResponseWriter, req *http.Request) {
 	jsonEncoder := json.NewEncoder(w)
 	jsonEncoder.Encode(dimension)
 }
+
+func legacyListHandler(w http.ResponseWriter, req *http.Request) {
+	datasetID := req.URL.Query().Get(":datasetId")
+	dimensionID := req.URL.Query().Get(":dimensionId")
+
+	dimension, err := legacyFindDimension(datasetID, dimensionID)
+	if err != nil {
+		fmt.Println(err)
+		response, _ := json.Marshal(models.Dimension{})
+		w.WriteHeader(400)
+		w.Write(response)
+		return
+	}
+
+	w.WriteHeader(200)
+	jsonEncoder := json.NewEncoder(w)
+	jsonEncoder.Encode(dimension)
+}

@@ -9,12 +9,16 @@
 // data/datasets/CPI15/2017/1/dimensions.json
 // data/datasets/CPI15/2017/versions.json
 // data/datasets/CPI15/editions.json
+// data/datasets/legacy/AF001EW/dimensions.json
 // data/datasets/legacy/AF001EW.json
+// data/datasets/legacy/CPI15/dimensions.json
 // data/datasets/legacy/CPI15.json
 // data/datasets.json
 // data/hierarchies/CI_000641.json
+// data/hierarchies/Geographic_Hierarchy.json
 // data/hierarchies/TIME_001.json
 // data/hierarchies.json
+// data/legacy_datasets.json
 // DO NOT EDIT!
 
 package stub
@@ -185,10 +189,46 @@ func dataDatasetsCpi15EditionsJson() (*asset, error) {
 	return a, err
 }
 
+// dataDatasetsLegacyAf001ewDimensionsJson reads file data from disk. It returns an error on failure.
+func dataDatasetsLegacyAf001ewDimensionsJson() (*asset, error) {
+	path := "/Users/mo/ons/go/src/github.com/ONSdigital/dp-dd-api-stub/stub/data/datasets/legacy/AF001EW/dimensions.json"
+	name := "data/datasets/legacy/AF001EW/dimensions.json"
+	bytes, err := bindataRead(path, name)
+	if err != nil {
+		return nil, err
+	}
+
+	fi, err := os.Stat(path)
+	if err != nil {
+		err = fmt.Errorf("Error reading asset info %s at %s: %v", name, path, err)
+	}
+
+	a := &asset{bytes: bytes, info: fi}
+	return a, err
+}
+
 // dataDatasetsLegacyAf001ewJson reads file data from disk. It returns an error on failure.
 func dataDatasetsLegacyAf001ewJson() (*asset, error) {
 	path := "/Users/mo/ons/go/src/github.com/ONSdigital/dp-dd-api-stub/stub/data/datasets/legacy/AF001EW.json"
 	name := "data/datasets/legacy/AF001EW.json"
+	bytes, err := bindataRead(path, name)
+	if err != nil {
+		return nil, err
+	}
+
+	fi, err := os.Stat(path)
+	if err != nil {
+		err = fmt.Errorf("Error reading asset info %s at %s: %v", name, path, err)
+	}
+
+	a := &asset{bytes: bytes, info: fi}
+	return a, err
+}
+
+// dataDatasetsLegacyCpi15DimensionsJson reads file data from disk. It returns an error on failure.
+func dataDatasetsLegacyCpi15DimensionsJson() (*asset, error) {
+	path := "/Users/mo/ons/go/src/github.com/ONSdigital/dp-dd-api-stub/stub/data/datasets/legacy/CPI15/dimensions.json"
+	name := "data/datasets/legacy/CPI15/dimensions.json"
 	bytes, err := bindataRead(path, name)
 	if err != nil {
 		return nil, err
@@ -257,6 +297,24 @@ func dataHierarchiesCi_000641Json() (*asset, error) {
 	return a, err
 }
 
+// dataHierarchiesGeographic_hierarchyJson reads file data from disk. It returns an error on failure.
+func dataHierarchiesGeographic_hierarchyJson() (*asset, error) {
+	path := "/Users/mo/ons/go/src/github.com/ONSdigital/dp-dd-api-stub/stub/data/hierarchies/Geographic_Hierarchy.json"
+	name := "data/hierarchies/Geographic_Hierarchy.json"
+	bytes, err := bindataRead(path, name)
+	if err != nil {
+		return nil, err
+	}
+
+	fi, err := os.Stat(path)
+	if err != nil {
+		err = fmt.Errorf("Error reading asset info %s at %s: %v", name, path, err)
+	}
+
+	a := &asset{bytes: bytes, info: fi}
+	return a, err
+}
+
 // dataHierarchiesTime_001Json reads file data from disk. It returns an error on failure.
 func dataHierarchiesTime_001Json() (*asset, error) {
 	path := "/Users/mo/ons/go/src/github.com/ONSdigital/dp-dd-api-stub/stub/data/hierarchies/TIME_001.json"
@@ -279,6 +337,24 @@ func dataHierarchiesTime_001Json() (*asset, error) {
 func dataHierarchiesJson() (*asset, error) {
 	path := "/Users/mo/ons/go/src/github.com/ONSdigital/dp-dd-api-stub/stub/data/hierarchies.json"
 	name := "data/hierarchies.json"
+	bytes, err := bindataRead(path, name)
+	if err != nil {
+		return nil, err
+	}
+
+	fi, err := os.Stat(path)
+	if err != nil {
+		err = fmt.Errorf("Error reading asset info %s at %s: %v", name, path, err)
+	}
+
+	a := &asset{bytes: bytes, info: fi}
+	return a, err
+}
+
+// dataLegacy_datasetsJson reads file data from disk. It returns an error on failure.
+func dataLegacy_datasetsJson() (*asset, error) {
+	path := "/Users/mo/ons/go/src/github.com/ONSdigital/dp-dd-api-stub/stub/data/legacy_datasets.json"
+	name := "data/legacy_datasets.json"
 	bytes, err := bindataRead(path, name)
 	if err != nil {
 		return nil, err
@@ -353,12 +429,16 @@ var _bindata = map[string]func() (*asset, error){
 	"data/datasets/CPI15/2017/1/dimensions.json": dataDatasetsCpi1520171DimensionsJson,
 	"data/datasets/CPI15/2017/versions.json": dataDatasetsCpi152017VersionsJson,
 	"data/datasets/CPI15/editions.json": dataDatasetsCpi15EditionsJson,
+	"data/datasets/legacy/AF001EW/dimensions.json": dataDatasetsLegacyAf001ewDimensionsJson,
 	"data/datasets/legacy/AF001EW.json": dataDatasetsLegacyAf001ewJson,
+	"data/datasets/legacy/CPI15/dimensions.json": dataDatasetsLegacyCpi15DimensionsJson,
 	"data/datasets/legacy/CPI15.json": dataDatasetsLegacyCpi15Json,
 	"data/datasets.json": dataDatasetsJson,
 	"data/hierarchies/CI_000641.json": dataHierarchiesCi_000641Json,
+	"data/hierarchies/Geographic_Hierarchy.json": dataHierarchiesGeographic_hierarchyJson,
 	"data/hierarchies/TIME_001.json": dataHierarchiesTime_001Json,
 	"data/hierarchies.json": dataHierarchiesJson,
+	"data/legacy_datasets.json": dataLegacy_datasetsJson,
 }
 
 // AssetDir returns the file names below a certain
@@ -424,16 +504,24 @@ var _bintree = &bintree{nil, map[string]*bintree{
 				"editions.json": &bintree{dataDatasetsCpi15EditionsJson, map[string]*bintree{}},
 			}},
 			"legacy": &bintree{nil, map[string]*bintree{
+				"AF001EW": &bintree{nil, map[string]*bintree{
+					"dimensions.json": &bintree{dataDatasetsLegacyAf001ewDimensionsJson, map[string]*bintree{}},
+				}},
 				"AF001EW.json": &bintree{dataDatasetsLegacyAf001ewJson, map[string]*bintree{}},
+				"CPI15": &bintree{nil, map[string]*bintree{
+					"dimensions.json": &bintree{dataDatasetsLegacyCpi15DimensionsJson, map[string]*bintree{}},
+				}},
 				"CPI15.json": &bintree{dataDatasetsLegacyCpi15Json, map[string]*bintree{}},
 			}},
 		}},
 		"datasets.json": &bintree{dataDatasetsJson, map[string]*bintree{}},
 		"hierarchies": &bintree{nil, map[string]*bintree{
 			"CI_000641.json": &bintree{dataHierarchiesCi_000641Json, map[string]*bintree{}},
+			"Geographic_Hierarchy.json": &bintree{dataHierarchiesGeographic_hierarchyJson, map[string]*bintree{}},
 			"TIME_001.json": &bintree{dataHierarchiesTime_001Json, map[string]*bintree{}},
 		}},
 		"hierarchies.json": &bintree{dataHierarchiesJson, map[string]*bintree{}},
+		"legacy_datasets.json": &bintree{dataLegacy_datasetsJson, map[string]*bintree{}},
 	}},
 }}
 

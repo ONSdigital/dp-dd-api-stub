@@ -1,7 +1,7 @@
 {
   "datasetId": "CPI15",
   "title": "CPI15 Consumer Prices Index (COICOP).",
-  "url": "http://localhost:20099/datasets/CPI15/edition/2017/version/1",
+  "url": "http://localhost:20099/datasets/CPI15/editions/2017/versions/1",
   "edition": "2016",
   "version": "1",
   "metadata": {
@@ -27,14 +27,14 @@
       "id": "SP00001",
       "name": "Special aggregate",
       "type": "classification",
-      "url": "http://localhost:20099//dataset/CPI15/edition/2017/version/1/dimension/SP00001",
+      "url": "http://localhost:20099//datasets/CPI15/editions/2017/versions/1/dimensions/SP00001",
       "hierarchical": true
     },
     {
       "id": "T000111",
       "name": "Time",
       "type": "time",
-      "url": "http://localhost:20099//dataset/CPI15/edition/2017/version/1/dimension/T000111",
+      "url": "http://localhost:20099//datasets/CPI15/editions/2017/versions/1/dimensions/T000111",
       "hierarchical": true
     }
   ]

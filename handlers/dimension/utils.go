@@ -27,12 +27,31 @@ func findDimension(datasetID string, edition string, version string,dimensionID 
 	return &models.Dimension{}, errors.New("Dimension id " + dimensionID + " not found.")
 }
 
+func legacyFindDimension(datasetID string, dimensionID string)  (dimension *models.Dimension, err error) {
+	raw, err := stub.Asset("data/datasets/legacy/" + datasetID + "/dimensions.json")
+	if err != nil {
+		fmt.Println(err.Error())
+		os.Exit(1)
+	}
+
+	var dimensions []models.Dimension = []models.Dimension{}
+	json.Unmarshal(raw, &dimensions)
+
+	for _, dimension := range dimensions {
+		if dimension.ID == dimensionID {
+			return &dimension, nil
+		}
+	}
+	return &models.Dimension{}, errors.New("Dimension id " + dimensionID + " not found.")
+}
+
 func getDimensionHierarchy(dimensionID string) (hierarchy *models.Hierarchy, err error) {
 
 	var hierarchyID string = "";
 	switch dimensionID {
 	case "SP00001": hierarchyID = "CI_000641"; break;
 	case "T000111": hierarchyID = "TIME_001"; break;
+	case "Geographic_Hierarchy": hierarchyID = "Geographic_Hierarchy"; break;
 	}
 
 	if (hierarchyID == "") {
