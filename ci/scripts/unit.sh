@@ -3,5 +3,6 @@
 export GOPATH=$(pwd)/go
 
 pushd $GOPATH/src/github.com/ONSdigital/dp-dd-api-stub
-  make generate test
+  make generate
+  go test -tags 'production' ./...
 popd
