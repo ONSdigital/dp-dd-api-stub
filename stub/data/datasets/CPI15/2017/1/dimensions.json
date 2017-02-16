@@ -4,7 +4,7 @@
     "name": "Special aggregate",
     "type": "classification",
     "hierarchical": true,
-    "url": "http://localhost:20099/datasets/CPI15/dimensions/SP00001",
+    "url": "http://localhost:20099/datasets/CPI15/editions/2017/versions/1/dimensions/SP00001",
     "options": [
       {
         "id": "FOOD0001",
@@ -81,7 +81,7 @@
     "name": "Time",
     "type": "time",
     "hierarchical": true,
-    "url": "http://localhost:20099/datasets/CPI15/dimensions/T000111",
+    "url": "http://localhost:20099/datasets/CPI15/editions/2017/versions/1/dimensions/T000111",
     "options": [
       {
         "id": "OPT02",

@@ -1,0 +1,80 @@
+{
+  "items": [
+    {
+      "id": "AF001EW",
+      "customerFacingId": "AF001EW",
+      "title": "AF001EW  Members of the Armed Forces by residence type by sex by age",
+      "url": "http://localhost:20099/versions/AF001EW",
+      "metadata": {
+        "description": "This dataset provides 2011 Census estimates that classify usual residents aged 16 and over who are members of the armed forces by residence type (household or communal resident), by sex and by age. The estimates are as at census day, 27 March 2011.",
+        "contact": {
+          "name": "Alexa Bradley",
+          "email": "pop.info@ons.gsi.gov.uk",
+          "phone": "+44 (0)1329 444972"
+        },
+        "releaseDate": "23 May 2014",
+        "nextReleaseDate": "To be announced",
+        "nationalStatistics": true,
+        "associatedPublications": [
+          "http://localhost:20099/versions/AF002",
+          "http://localhost:20099/versions/AF003",
+          "http://localhost:20099/versions/AF004"
+        ],
+        "methodology": null,
+        "termsAndConditions": "N/A"
+      }
+    },
+    {
+      "id": "CPI15",
+      "customerFacingId": "CPI15",
+      "title": "CPI15 Consumer Prices Index (COICOP).",
+      "url": "http://localhost:20099/versions/CPI15",
+      "metadata": {
+        "description": "Consumer Price Index statistics by Time and Special Aggregate (type of economic activity). This dataset shows the movement of prices over the last five years within the UK economy, broken down by month and various classifications of economic activity. The economic classifications are derived from the COICOP (Classification Of Individual Consumption by Purpose) list.",
+        "contact": {
+          "name": "James Tucker",
+          "email": "cpi@ons.gsi.gov.uk",
+          "phone": "+44 (0)1633 456900"
+        },
+        "releaseDate": "17 January 2017",
+        "nextReleaseDate": "14 February 2017",
+        "nationalStatistics": true,
+        "associatedPublications": null,
+        "methodology": [
+          {
+            "title": "Consumer Price Inflation (includes all 4 indices—CPI, CPIH, RPI and RPIJ)",
+            "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/qmis/consumerpriceinflationqmi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "NO-META",
+      "customerFacingId": "NO-META",
+      "title": "Fake dataset with missing metadata field",
+      "url": "http://localhost:20099/versions/NO-META"
+    },
+    {
+      "id": "EMPTY-META",
+      "customerFacingId": "EMPTY-META",
+      "title": "Fake dataset with empty metadata",
+      "url": "http://localhost:20099/versions/EMPTY-META",
+      "metadata": {
+        "contact": null,
+        "releaseDate": "",
+        "nextReleaseDate": "",
+        "nationalStatistics": false,
+        "associatedPublications": null,
+        "methodology": null
+      }
+    }
+  ],
+  "count": 4,
+  "total": 4,
+  "startIndex": 0,
+  "itemsPerPage": 10,
+  "first": "http://localhost:20099/datasets?page=1",
+  "last": "http://localhost:20099/datasets?page=1",
+  "page": 1,
+  "totalPages": 1
+}

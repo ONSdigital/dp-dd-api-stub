@@ -1,8 +1,10 @@
 {
-  "id": "AF001EW",
-  "customerFacingId": "AF001EW",
+  "id": "AF001EWE2016V1",
+  "datasetId": "AF001EW",
   "title": "AF001EW  Members of the Armed Forces by residence type by sex by age",
-  "url": "http://localhost:20099/datasets/AF001EW",
+  "url": "http://localhost:20099/datasets/AF001EW/editions/2016/versions/1",
+  "edition": "2016",
+  "version": "1",
   "metadata": {
     "description": "This dataset provides 2011 Census estimates that classify usual residents aged 16 and over who are members of the armed forces by residence type (household or communal resident), by sex and by age. The estimates are as at census day, 27 March 2011.",
     "contact": {
@@ -14,9 +16,9 @@
     "nextReleaseDate": "To be announced",
     "nationalStatistics": true,
     "associatedPublications": [
-      "http://localhost:20099/datasets/AF002",
-      "http://localhost:20099/datasets/AF003",
-      "http://localhost:20099/datasets/AF004"
+      "http://localhost:20099/datasets/AF002/",
+      "http://localhost:20099/datasets/AF003/",
+      "http://localhost:20099/datasets/AF004/"
     ],
     "methodology": null,
     "termsAndConditions": "N/A"
@@ -26,28 +28,28 @@
       "id": "D000125",
       "name": "Sex",
       "type": "standard",
-      "url": "http://localhost:20099/datasets/AF001EW/dimensions/D000125",
+      "url": "http://localhost:20099//datasets/AF001EW/editions/2016/versions/1/dimensions/D000125",
       "hierarchical": false
     },
     {
       "id": "D000124",
       "name": "Residence Type",
       "type": "standard",
-      "url": "http://localhost:20099/datasets/AF001EW/dimensions/D000124",
+      "url": "http://localhost:20099//datasets/AF001EW/editions/2016/versions/1/dimensions/D000124",
       "hierarchical": false
     },
     {
       "id": "D000123",
       "name": "Age",
       "type": "standard",
-      "url": "http://localhost:20099/datasets/AF001EW/dimensions/D000123",
+      "url": "http://localhost:20099//datasets/AF001EW/editions/2016/versions/1/dimensions/D000123",
       "hierarchical": false
     },
     {
       "id": "D000126",
       "name": "2011 Statistical Geography Hierarchy",
       "type": "geography",
-      "url": "http://localhost:20099/datasets/AF001EW/dimensions/D000126",
+      "url": "http://localhost:20099//datasets/AF001EW/editions/2016/versions/1/dimensions/D000126",
       "hierarchical": true
     }
   ]

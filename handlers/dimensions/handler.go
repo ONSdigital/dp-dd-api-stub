@@ -9,7 +9,23 @@ import (
 func Handler(w http.ResponseWriter, req *http.Request) {
 
 	datasetID := req.URL.Query().Get(":datasetId")
-	raw, err := stub.Asset("data/datasets/" + datasetID + "/dimensions.json")
+	edition := req.URL.Query().Get(":edition")
+	version := req.URL.Query().Get(":version")
+	raw, err := stub.Asset("data/datasets/" + datasetID + "/" + edition + "/" + version + "/dimensions.json")
+	if err != nil {
+		fmt.Println(err.Error())
+		w.WriteHeader(404)
+		return
+	}
+
+	w.Write(raw)
+	w.WriteHeader(200)
+}
+
+func LegacyHandler(w http.ResponseWriter, req *http.Request) {
+
+	datasetID := req.URL.Query().Get(":uuid")
+	raw, err := stub.Asset("data/datasets/legacy/" + datasetID + "/dimensions.json")
 	if err != nil {
 		fmt.Println(err.Error())
 		w.WriteHeader(404)
