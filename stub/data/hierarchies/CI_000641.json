@@ -4,10 +4,6 @@
   "type": "classification",
   "options": [
     {
-      "id": "CI_0004216",
-      "name": "CPI (overall index)"
-    },
-    {
       "id": "CI_0004331",
       "name": "01 Food and non-alcoholic beverages",
       "options": [
