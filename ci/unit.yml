@@ -1,0 +1,16 @@
+---
+
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: golang
+    tag: 1.7.4
+
+inputs:
+  - name: dp-dd-api-stub
+    path: go/src/github.com/ONSdigital/dp-dd-api-stub
+
+run:
+  path: go/src/github.com/ONSdigital/dp-dd-api-stub/ci/scripts/unit.sh
